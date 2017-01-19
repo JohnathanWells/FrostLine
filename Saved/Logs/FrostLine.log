@@ -297,3 +297,8 @@ LogInit: Object subsystem initialized
 [2017.01.19-21.46.21:985][345]LogEditorViewport: Clicking on Actor (LMB): Brazier_Blueprint_C (Brazier_Blueprint)
 [2017.01.19-21.47.22:790][594]LogSavePackage: Save=155.64ms
 [2017.01.19-21.47.22:790][594]LogSavePackage: Moving '../../../../../../Users/cmay1/Documents/Unreal Projects/FrostLine/Saved/FirstPersonExampleMap5DACB5CA49152F3762F7A4A1BCB59801.tmp' to '../../../../../../Users/cmay1/Documents/Unreal Projects/FrostLine/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2017.01.19-21.47.22:795][594]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/cmay1/Documents/Unreal Projects/FrostLine/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
+[2017.01.19-21.47.22:834][594]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 0.277
+[2017.01.19-21.57.23:221][719]LogSavePackage: Save=290.88ms
+[2017.01.19-21.57.23:221][719]LogSavePackage: Moving '../../../../../../Users/cmay1/Documents/Unreal Projects/FrostLine/Saved/FirstPersonExampleMap_Auto170457049402FC3D879B2A3B32418AF41.tmp' to '../../../../../../Users/cmay1/Documents/Unreal Projects/FrostLine/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto1.umap'
+[2017.01.19-21.57.23:227][719]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/cmay1/Documents/Unreal Projects/FrostLine/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto1.umap
