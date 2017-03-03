@@ -1,9 +1,9 @@
-﻿Log file open, 03/02/17 19:47:40
+﻿Log file open, 03/02/17 19:54:19
 LogInit:Display: Running engine for game: FrostLine
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-1042083769) SRandInit(-1042083769).
+LogInit:Display: RandInit(7152300) SRandInit(7152300).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.091406
+LogStats: Stats thread started at 0.079624
 LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
 LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
 LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
@@ -143,252 +143,343 @@ LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.14/Engine/Binaries/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.03.03-00.47.40:921][  0]LogInit: Selected Device Profile: [Windows]
-[2017.03.03-00.47.40:922][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.03.03-00.47.40:944][  0]LogInit: Computer: CND4220H97
-[2017.03.03-00.47.40:944][  0]LogInit: User: jgonzale5
-[2017.03.03-00.47.40:944][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.03.03-00.47.40:944][  0]LogInit: High frequency timer resolution =2.630635 MHz
-[2017.03.03-00.47.40:944][  0]LogMemory: Memory total: Physical=15.4GB (16GB approx)
-[2017.03.03-00.47.40:944][  0]LogMemory: Platform Memory Stats for Windows
-[2017.03.03-00.47.40:944][  0]LogMemory: Process Physical Memory: 263.63 MB used, 263.63 MB peak
-[2017.03.03-00.47.40:944][  0]LogMemory: Process Virtual Memory: 262.71 MB used, 262.71 MB peak
-[2017.03.03-00.47.40:944][  0]LogMemory: Physical Memory: 6476.05 MB used,  9325.06 MB free, 15801.11 MB total
-[2017.03.03-00.47.40:944][  0]LogMemory: Virtual Memory: 660.11 MB used,  9325.06 MB free, 134217728.00 MB total
-[2017.03.03-00.47.40:975][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2017.03.03-00.47.41:750][  0]LogD3D11RHI: D3D11 adapters:
-[2017.03.03-00.47.41:783][  0]LogD3D11RHI:    0. 'NVIDIA Quadro K2100M' (Feature Level 11_0)
-[2017.03.03-00.47.41:783][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.03.03-00.47.41:807][  0]LogD3D11RHI:    1. 'NVIDIA Quadro K2100M' (Feature Level 11_0)
-[2017.03.03-00.47.41:807][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
-[2017.03.03-00.47.41:809][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.03.03-00.47.41:809][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.03.03-00.47.41:809][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.03.03-00.47.41:814][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.03.03-00.47.41:814][  0]LogD3D11RHI:     GPU DeviceId: 0x11fc (for the marketing name, search the web for "GPU Device Id")
-[2017.03.03-00.47.41:814][  0]LogWindows: EnumDisplayDevices:
-[2017.03.03-00.47.41:815][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
-[2017.03.03-00.47.41:815][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.03.03-00.47.41:815][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.03.03-00.47.41:815][  0]LogWindows:    3. 'NVIDIA Quadro K2100M' (P:0 D:0)
-[2017.03.03-00.47.41:815][  0]LogWindows:    4. 'NVIDIA Quadro K2100M' (P:0 D:0)
-[2017.03.03-00.47.41:815][  0]LogWindows:    5. 'NVIDIA Quadro K2100M' (P:0 D:0)
-[2017.03.03-00.47.41:815][  0]LogWindows:    6. 'NVIDIA Quadro K2100M' (P:0 D:0)
-[2017.03.03-00.47.41:815][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
-[2017.03.03-00.47.41:815][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro K2100M
-[2017.03.03-00.47.41:815][  0]LogD3D11RHI:   Driver Version: 354.90 (internal:10.18.13.5490, unified:354.90)
-[2017.03.03-00.47.41:815][  0]LogD3D11RHI:      Driver Date: 4-5-2016
-[2017.03.03-00.47.41:815][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.03.03-00.47.41:836][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
-[2017.03.03-00.47.41:836][  0]LogD3D11RHI: Async texture creation enabled
-[2017.03.03-00.47.41:856][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2017.03.03-00.47.41:857][  0]LogShaderCompilers: Guid format shader working directory is -19 characters bigger than the processId version (../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Intermediate/Shaders/WorkingDirectory/1204/).
-[2017.03.03-00.47.41:857][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/jgonzale5/AppData/Local/Temp/UnrealShaderWorkingDir/FF766FA14587B6B1CD7A80B214266A09/'.
-[2017.03.03-00.47.41:857][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.03.03-00.47.43:259][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.03.03-00.47.43:318][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2017.03.03-00.47.43:395][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2017.03.03-00.47.43:508][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2017.03.03-00.47.43:659][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2017.03.03-00.47.43:786][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.03.03-00.47.43:843][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.03.03-00.47.43:899][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.03.03-00.47.43:943][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.03.03-00.47.44:005][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.03.03-00.47.44:065][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.03.03-00.47.44:128][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.03.03-00.47.44:198][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.03.03-00.47.44:267][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.03.03-00.47.44:334][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.03.03-00.47.44:471][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.03.03-00.47.44:471][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.03.03-00.47.44:509][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.03.03-00.47.44:602][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.03.03-00.47.44:646][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.03.03-00.47.44:707][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.03.03-00.47.44:768][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.03.03-00.47.44:837][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.03.03-00.47.44:903][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.03.03-00.47.44:903][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.03.03-00.47.45:327][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.03.03-00.47.45:385][  0]LogDerivedDataCache: Loaded boot cache 0.06s 50MB C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
-[2017.03.03-00.47.45:385][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
-[2017.03.03-00.47.45:385][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.03.03-00.47.45:385][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.03.03-00.47.45:385][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.03.03-00.47.45:385][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.03.03-00.47.45:407][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.03.03-00.47.45:420][  0]LogDerivedDataCache: Using Local data cache path C:/Users/jgonzale5/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.03.03-00.47.45:742][  0]LogInit: Selected Device Profile: [Windows]
-[2017.03.03-00.47.45:745][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.03.03-00.47.46:003][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.03.03-00.47.46:069][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.03.03-00.47.46:113][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.03.03-00.47.46:113][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2017.03.03-00.47.46:113][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.03.03-00.47.46:743][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: frostline, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3589263868
-[2017.03.03-00.47.46:812][  0]LogAssetRegistry: FAssetRegistry took 0.0223 seconds to start up
-[2017.03.03-00.47.46:870][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.032441 seconds
-[2017.03.03-00.47.46:878][  0]LogUObjectArray: 31947 objects as part of root set at end of initial load.
-[2017.03.03-00.47.46:878][  0]LogUObjectAllocator: 6936072 out of 0 bytes used by permanent object pool.
-[2017.03.03-00.47.46:878][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.03.03-00.47.46:947][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.03.03-00.47.47:721][  0]LogSlate: Using Freetype 2.6.0
-[2017.03.03-00.47.47:722][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.03.03-00.47.47:722][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.03.03-00.47.48:647][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.03.03-00.47.48:688][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.03.03-00.47.49:035][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.03.03-00.47.49:451][  0]SourceControl: Info Source control is disabled
-[2017.03.03-00.47.49:452][  0]SourceControl: Info Source control is disabled
-[2017.03.03-00.47.49:500][  0]SourceControl: Info Source control is disabled
-[2017.03.03-00.47.49:545][  0]SourceControl: Info Source control is disabled
-[2017.03.03-00.47.50:969][  0]LogEngine: Initializing Engine...
-[2017.03.03-00.47.50:969][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.03.03-00.47.51:243][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.03.03-00.47.51:248][  0]LogInit: XAudio2 using 'Speakers / HP (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.03-00.47.51:267][  0]LogInit: FAudioDevice initialized.
-[2017.03.03-00.47.51:298][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
-[2017.03.03-00.47.51:306][  0]LogInit: Texture streaming: Enabled
-[2017.03.03-00.47.51:504][  0]LogInit: Transaction tracking system initialized
-[2017.03.03-00.47.51:884][  0]BlueprintLog: New page: Editor Load
-[2017.03.03-00.47.52:917][  0]LocalizationService: Info Localization service is disabled
-[2017.03.03-00.47.53:656][  0]LogConsoleResponse:Display: 
-[2017.03.03-00.47.53:827][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.03.03-00.47.53:827][  0]LogCook:Display: Mobile HDR setting 1
-[2017.03.03-00.47.54:220][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' took 0.03s
-[2017.03.03-00.47.54:837][  0]SourceControl: Info Source control is disabled
-[2017.03.03-00.47.54:837][  0]Cmd: MAP LOAD FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.03.03-00.47.54:846][  0]LightingResults: New page: Lighting Build
-[2017.03.03-00.47.54:894][  0]MapCheck: New page: Map Check
-[2017.03.03-00.47.54:894][  0]LightingResults: New page: Lighting Build
-[2017.03.03-00.47.56:886][  0]LogSpawn:Warning: UWorld::DestroyActor: World has no context! World: FirstPersonExampleMap, Actor: /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.DESTROYED_TargetPoint_CHILDACTOR_2
-[2017.03.03-00.47.56:886][  0]LogSpawn:Warning: UWorld::DestroyActor: World has no context! World: FirstPersonExampleMap, Actor: /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.DESTROYED_TargetPoint_CHILDACTOR_3
-[2017.03.03-00.47.56:916][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2017.03.03-00.47.56:955][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.03.03-00.47.56:957][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.03.03-00.47.57:018][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 61.033ms to complete.
-[2017.03.03-00.47.57:018][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 2.181
-[2017.03.03-00.47.57:191][  0]LogCollectionManager: Loaded 1 collections in 0.004912 seconds
-[2017.03.03-00.47.57:278][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/Collections/' took 0.01s
-[2017.03.03-00.47.57:278][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Developers/jgonzale5/Collections/' took 0.01s
-[2017.03.03-00.47.57:278][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Collections/' took 0.01s
-[2017.03.03-00.47.57:278][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000005 seconds
-[2017.03.03-00.47.57:278][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000001 seconds
-[2017.03.03-00.47.57:292][  0]LogContentBrowser: Native class hierarchy populated in 0.0118 seconds. Added 2190 classes and 428 folders.
-[2017.03.03-00.47.57:335][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.03.03-00.47.57:335][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.03.03-00.47.57:337][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0013 seconds. Added 13 classes and 0 folders.
-[2017.03.03-00.47.57:399][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0016 seconds. Added 0 classes and 0 folders.
-[2017.03.03-00.47.57:790][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0013 seconds. Added 0 classes and 0 folders.
-[2017.03.03-00.47.57:898][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0014 seconds. Added 1 classes and 2 folders.
-[2017.03.03-00.47.57:951][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.03.03-00.47.57:963][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2017.03.03-00.47.58:031][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0020 seconds. Added 1 classes and 2 folders.
-[2017.03.03-00.47.58:031][  0]LogLoad: (Engine Initialization) Total time: 19.09 seconds
-[2017.03.03-00.47.58:031][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.52 seconds
-[2017.03.03-00.47.58:031][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
-[2017.03.03-00.47.58:372][  0]LogOcInput: OculusInput pre-init called
-[2017.03.03-00.47.58:432][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.03.03-00.47.58:692][  0]LogRenderer: Reallocating scene render targets to support 948x488 NumSamples 1 (Frame:2).
-[2017.03.03-00.47.58:829][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' took 0.44s
-[2017.03.03-00.47.59:169][  2]LogAssetRegistry: Asset discovery search completed in 12.3797 seconds
-[2017.03.03-00.47.59:169][  2]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000005 seconds (found 0 objects)
-[2017.03.03-00.47.59:169][  2]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000022 seconds (updated 0 objects)
-[2017.03.03-00.49.18:969][796]AssetReimport: New page: Outstanding source content changes 2:49:18 PM
-[2017.03.03-00.49.18:974][796]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/roar.wav)
-[2017.03.03-00.49.19:138][797]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/screech.wav)
-[2017.03.03-00.49.19:300][798]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step1.wav)
-[2017.03.03-00.49.19:393][799]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step2.wav)
-[2017.03.03-00.49.19:440][800]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step3.wav)
-[2017.03.03-00.49.19:502][801]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk1.wav)
-[2017.03.03-00.49.19:539][802]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk10.wav)
-[2017.03.03-00.49.19:564][803]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk11.wav)
-[2017.03.03-00.49.19:591][804]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk2.wav)
-[2017.03.03-00.49.19:608][804]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk3.wav)
-[2017.03.03-00.49.19:631][805]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk4.wav)
-[2017.03.03-00.49.19:659][806]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk5.wav)
-[2017.03.03-00.49.19:708][807]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk6.wav)
-[2017.03.03-00.49.19:752][808]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk7.wav)
-[2017.03.03-00.49.19:780][809]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk8.wav)
-[2017.03.03-00.49.19:812][810]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk9.wav)
-[2017.03.03-00.49.19:893][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/roar" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/roar.uasset" SILENT=true
-[2017.03.03-00.49.19:903][811]LogSavePackage: Save=8.40ms
-[2017.03.03-00.49.19:903][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/roarCDE1A1754B5448C0AA11A3948A145AA3.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/roar.uasset'
-[2017.03.03-00.49.19:908][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/roar.uasset
-[2017.03.03-00.49.19:927][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/screech" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/screech.uasset" SILENT=true
-[2017.03.03-00.49.19:936][811]LogSavePackage: Save=7.71ms
-[2017.03.03-00.49.19:936][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/screech98E0527A48F0084D308B3CB780422B9D.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/screech.uasset'
-[2017.03.03-00.49.19:938][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/screech.uasset
-[2017.03.03-00.49.19:957][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/step1" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step1.uasset" SILENT=true
-[2017.03.03-00.49.19:966][811]LogSavePackage: Save=7.53ms
-[2017.03.03-00.49.19:966][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/step10720581848898381D4E8D7A8495E1CB5.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step1.uasset'
-[2017.03.03-00.49.19:968][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step1.uasset
-[2017.03.03-00.49.19:985][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/step2" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step2.uasset" SILENT=true
-[2017.03.03-00.49.19:994][811]LogSavePackage: Save=7.75ms
-[2017.03.03-00.49.19:994][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/step24A2BE5C24084CF281147EE8BF89FA22E.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step2.uasset'
-[2017.03.03-00.49.19:995][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step2.uasset
-[2017.03.03-00.49.20:014][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/step3" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step3.uasset" SILENT=true
-[2017.03.03-00.49.20:023][811]LogSavePackage: Save=8.09ms
-[2017.03.03-00.49.20:023][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/step3E798A3154FAF3A355001FE845BBF1BD3.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step3.uasset'
-[2017.03.03-00.49.20:025][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step3.uasset
-[2017.03.03-00.49.20:045][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk1" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk1.uasset" SILENT=true
-[2017.03.03-00.49.20:054][811]LogSavePackage: Save=7.47ms
-[2017.03.03-00.49.20:054][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk17A40787F426D649A0C6A6C9D87EA6BC6.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk1.uasset'
-[2017.03.03-00.49.20:056][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk1.uasset
-[2017.03.03-00.49.20:072][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk10" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk10.uasset" SILENT=true
-[2017.03.03-00.49.20:081][811]LogSavePackage: Save=7.31ms
-[2017.03.03-00.49.20:081][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk1045AFEAB645966ADDBD378DBBD244650D.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk10.uasset'
-[2017.03.03-00.49.20:082][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk10.uasset
-[2017.03.03-00.49.20:097][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk11" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk11.uasset" SILENT=true
-[2017.03.03-00.49.20:105][811]LogSavePackage: Save=7.60ms
-[2017.03.03-00.49.20:106][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk119954D92B46715528ABBF0DA3E740B202.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk11.uasset'
-[2017.03.03-00.49.20:107][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk11.uasset
-[2017.03.03-00.49.20:120][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk2" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk2.uasset" SILENT=true
-[2017.03.03-00.49.20:130][811]LogSavePackage: Save=7.94ms
-[2017.03.03-00.49.20:130][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk25D6D94DA4C3D578C193E3C95C03ECB56.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk2.uasset'
-[2017.03.03-00.49.20:132][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk2.uasset
-[2017.03.03-00.49.20:149][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk3" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk3.uasset" SILENT=true
-[2017.03.03-00.49.20:158][811]LogSavePackage: Save=7.88ms
-[2017.03.03-00.49.20:158][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk322FC625045BD675E7DB013A82F5604A0.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk3.uasset'
-[2017.03.03-00.49.20:160][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk3.uasset
-[2017.03.03-00.49.20:174][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk4" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk4.uasset" SILENT=true
-[2017.03.03-00.49.20:183][811]LogSavePackage: Save=7.67ms
-[2017.03.03-00.49.20:183][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk444FF6D62436CA97C91A959B80087D86E.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk4.uasset'
-[2017.03.03-00.49.20:185][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk4.uasset
-[2017.03.03-00.49.20:200][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk5" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk5.uasset" SILENT=true
-[2017.03.03-00.49.20:210][811]LogSavePackage: Save=8.18ms
-[2017.03.03-00.49.20:210][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk52513513C484EB3F9F8803C9A0A4185BE.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk5.uasset'
-[2017.03.03-00.49.20:212][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk5.uasset
-[2017.03.03-00.49.20:225][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk6" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk6.uasset" SILENT=true
-[2017.03.03-00.49.20:234][811]LogSavePackage: Save=7.50ms
-[2017.03.03-00.49.20:234][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk60EF9FBCF4E782A629E1BE6A8E66CDC93.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk6.uasset'
-[2017.03.03-00.49.20:236][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk6.uasset
-[2017.03.03-00.49.20:250][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk7" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk7.uasset" SILENT=true
-[2017.03.03-00.49.20:260][811]LogSavePackage: Save=7.80ms
-[2017.03.03-00.49.20:260][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk760C8A29A4AEF61329A48D8B88A80FBE7.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk7.uasset'
-[2017.03.03-00.49.20:261][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk7.uasset
-[2017.03.03-00.49.20:278][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk8" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk8.uasset" SILENT=true
-[2017.03.03-00.49.20:287][811]LogSavePackage: Save=7.51ms
-[2017.03.03-00.49.20:287][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk824FE736A49A38510EAF8889C0146DB26.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk8.uasset'
-[2017.03.03-00.49.20:289][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk8.uasset
-[2017.03.03-00.49.20:316][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk9" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk9.uasset" SILENT=true
-[2017.03.03-00.49.20:340][811]LogSavePackage: Save=20.62ms
-[2017.03.03-00.49.20:340][811]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk90092AAD543DC99E4168F9DB134850DCC.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk9.uasset'
-[2017.03.03-00.49.20:345][811]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk9.uasset
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/roar.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/screech.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/step1.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/step2.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/step3.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk1.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk10.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk11.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk2.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk3.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk4.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk5.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk6.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk7.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk8.
-[2017.03.03-00.49.23:366][936]AssetReimport: Info Importing new asset /Game/Sounds/Enemy/walk9.
+[2017.03.03-00.54.20:140][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.03-00.54.20:140][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.03-00.54.20:153][  0]LogInit: Computer: CND4220H97
+[2017.03.03-00.54.20:153][  0]LogInit: User: jgonzale5
+[2017.03.03-00.54.20:153][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.03.03-00.54.20:153][  0]LogInit: High frequency timer resolution =2.630635 MHz
+[2017.03.03-00.54.20:153][  0]LogMemory: Memory total: Physical=15.4GB (16GB approx)
+[2017.03.03-00.54.20:153][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.03-00.54.20:153][  0]LogMemory: Process Physical Memory: 263.55 MB used, 263.55 MB peak
+[2017.03.03-00.54.20:153][  0]LogMemory: Process Virtual Memory: 262.69 MB used, 262.69 MB peak
+[2017.03.03-00.54.20:153][  0]LogMemory: Physical Memory: 6327.23 MB used,  9473.87 MB free, 15801.11 MB total
+[2017.03.03-00.54.20:153][  0]LogMemory: Virtual Memory: 660.11 MB used,  9473.87 MB free, 134217728.00 MB total
+[2017.03.03-00.54.20:181][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.03.03-00.54.21:210][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.03-00.54.21:241][  0]LogD3D11RHI:    0. 'NVIDIA Quadro K2100M' (Feature Level 11_0)
+[2017.03.03-00.54.21:241][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.03.03-00.54.21:262][  0]LogD3D11RHI:    1. 'NVIDIA Quadro K2100M' (Feature Level 11_0)
+[2017.03.03-00.54.21:262][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
+[2017.03.03-00.54.21:263][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.03-00.54.21:263][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.03-00.54.21:263][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.03-00.54.21:269][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.03-00.54.21:269][  0]LogD3D11RHI:     GPU DeviceId: 0x11fc (for the marketing name, search the web for "GPU Device Id")
+[2017.03.03-00.54.21:269][  0]LogWindows: EnumDisplayDevices:
+[2017.03.03-00.54.21:269][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2017.03.03-00.54.21:269][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.03.03-00.54.21:269][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.03.03-00.54.21:270][  0]LogWindows:    3. 'NVIDIA Quadro K2100M' (P:0 D:0)
+[2017.03.03-00.54.21:270][  0]LogWindows:    4. 'NVIDIA Quadro K2100M' (P:0 D:0)
+[2017.03.03-00.54.21:270][  0]LogWindows:    5. 'NVIDIA Quadro K2100M' (P:0 D:0)
+[2017.03.03-00.54.21:270][  0]LogWindows:    6. 'NVIDIA Quadro K2100M' (P:0 D:0)
+[2017.03.03-00.54.21:270][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.03.03-00.54.21:270][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro K2100M
+[2017.03.03-00.54.21:270][  0]LogD3D11RHI:   Driver Version: 354.90 (internal:10.18.13.5490, unified:354.90)
+[2017.03.03-00.54.21:270][  0]LogD3D11RHI:      Driver Date: 4-5-2016
+[2017.03.03-00.54.21:270][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.03.03-00.54.21:289][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
+[2017.03.03-00.54.21:289][  0]LogD3D11RHI: Async texture creation enabled
+[2017.03.03-00.54.21:321][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.03.03-00.54.21:323][  0]LogShaderCompilers: Guid format shader working directory is -19 characters bigger than the processId version (../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Intermediate/Shaders/WorkingDirectory/9780/).
+[2017.03.03-00.54.21:323][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/jgonzale5/AppData/Local/Temp/UnrealShaderWorkingDir/A4674E3B4AAE1D92A9CD4689C06A1E03/'.
+[2017.03.03-00.54.21:323][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.03-00.54.22:965][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.03-00.54.23:108][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.03.03-00.54.23:182][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.03.03-00.54.23:245][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.03.03-00.54.23:307][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.03.03-00.54.23:415][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.03-00.54.23:491][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.03-00.54.23:596][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.03-00.54.23:682][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.03-00.54.23:840][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.03-00.54.23:941][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.03-00.54.24:086][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.03-00.54.24:145][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.03-00.54.24:237][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.03-00.54.24:300][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.03-00.54.24:414][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.03-00.54.24:414][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.03-00.54.24:451][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.03-00.54.24:616][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.03-00.54.24:663][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.03-00.54.24:730][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.03.03-00.54.24:795][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.03.03-00.54.24:873][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.03.03-00.54.24:944][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.03.03-00.54.24:944][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.03-00.54.25:343][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.03-00.54.25:407][  0]LogDerivedDataCache: Loaded boot cache 0.06s 50MB C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.03.03-00.54.25:407][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
+[2017.03.03-00.54.25:407][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.03-00.54.25:407][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.03-00.54.25:408][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.03.03-00.54.25:408][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.03.03-00.54.25:429][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.03.03-00.54.25:442][  0]LogDerivedDataCache: Using Local data cache path C:/Users/jgonzale5/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.03.03-00.54.25:760][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.03-00.54.25:764][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.03-00.54.26:014][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.03.03-00.54.26:056][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.03.03-00.54.26:102][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.03.03-00.54.26:102][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.03.03-00.54.26:102][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.03-00.54.26:786][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: frostline, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3589263868
+[2017.03.03-00.54.26:894][  0]LogAssetRegistry: FAssetRegistry took 0.0227 seconds to start up
+[2017.03.03-00.54.27:009][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.054175 seconds
+[2017.03.03-00.54.27:026][  0]LogUObjectArray: 31947 objects as part of root set at end of initial load.
+[2017.03.03-00.54.27:026][  0]LogUObjectAllocator: 6936072 out of 0 bytes used by permanent object pool.
+[2017.03.03-00.54.27:026][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.03-00.54.27:107][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.03-00.54.28:513][  0]LogSlate: Using Freetype 2.6.0
+[2017.03.03-00.54.28:515][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.03-00.54.28:515][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.03-00.54.29:974][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.03.03-00.54.30:021][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.03-00.54.30:617][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.03.03-00.54.31:482][  0]SourceControl: Info Source control is disabled
+[2017.03.03-00.54.31:483][  0]SourceControl: Info Source control is disabled
+[2017.03.03-00.54.31:535][  0]SourceControl: Info Source control is disabled
+[2017.03.03-00.54.31:646][  0]SourceControl: Info Source control is disabled
+[2017.03.03-00.54.33:320][  0]LogEngine: Initializing Engine...
+[2017.03.03-00.54.33:322][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.03.03-00.54.33:872][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.03.03-00.54.33:887][  0]LogInit: XAudio2 using 'Speakers / HP (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.03.03-00.54.33:926][  0]LogInit: FAudioDevice initialized.
+[2017.03.03-00.54.33:997][  0]LogDerivedDataCache: Saved boot cache 0.07s 50MB C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.03.03-00.54.34:019][  0]LogInit: Texture streaming: Enabled
+[2017.03.03-00.54.34:594][  0]LogInit: Transaction tracking system initialized
+[2017.03.03-00.54.35:417][  0]BlueprintLog: New page: Editor Load
+[2017.03.03-00.54.36:326][  0]LocalizationService: Info Localization service is disabled
+[2017.03.03-00.54.37:587][  0]LogConsoleResponse:Display: 
+[2017.03.03-00.54.37:757][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.03.03-00.54.37:757][  0]LogCook:Display: Mobile HDR setting 1
+[2017.03.03-00.54.38:604][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' took 0.02s
+[2017.03.03-00.54.38:689][  0]SourceControl: Info Source control is disabled
+[2017.03.03-00.54.38:690][  0]Cmd: MAP LOAD FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.03-00.54.38:691][  0]LightingResults: New page: Lighting Build
+[2017.03.03-00.54.38:802][  0]MapCheck: New page: Map Check
+[2017.03.03-00.54.38:802][  0]LightingResults: New page: Lighting Build
+[2017.03.03-00.54.39:788][  0]LogSpawn:Warning: UWorld::DestroyActor: World has no context! World: FirstPersonExampleMap, Actor: /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.DESTROYED_TargetPoint_CHILDACTOR_2
+[2017.03.03-00.54.39:788][  0]LogSpawn:Warning: UWorld::DestroyActor: World has no context! World: FirstPersonExampleMap, Actor: /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.DESTROYED_TargetPoint_CHILDACTOR_3
+[2017.03.03-00.54.40:509][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2017.03.03-00.54.40:563][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.03-00.54.40:564][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.03-00.54.40:742][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 177.948ms to complete.
+[2017.03.03-00.54.40:743][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 2.053
+[2017.03.03-00.54.41:040][  0]LogCollectionManager: Loaded 1 collections in 0.005299 seconds
+[2017.03.03-00.54.41:178][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/Collections/' took 0.01s
+[2017.03.03-00.54.41:178][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Developers/jgonzale5/Collections/' took 0.01s
+[2017.03.03-00.54.41:178][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Collections/' took 0.01s
+[2017.03.03-00.54.41:178][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000007 seconds
+[2017.03.03-00.54.41:178][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000001 seconds
+[2017.03.03-00.54.41:212][  0]LogContentBrowser: Native class hierarchy populated in 0.0333 seconds. Added 2190 classes and 428 folders.
+[2017.03.03-00.54.41:328][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.03-00.54.41:328][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.03.03-00.54.41:332][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0029 seconds. Added 13 classes and 0 folders.
+[2017.03.03-00.54.41:396][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2017.03.03-00.54.41:436][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2017.03.03-00.54.41:551][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0026 seconds. Added 1 classes and 2 folders.
+[2017.03.03-00.54.41:621][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.03-00.54.41:641][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.03.03-00.54.41:808][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0041 seconds. Added 1 classes and 2 folders.
+[2017.03.03-00.54.41:809][  0]LogLoad: (Engine Initialization) Total time: 23.99 seconds
+[2017.03.03-00.54.41:809][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.47 seconds
+[2017.03.03-00.54.41:809][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.03.03-00.54.42:150][  0]LogOcInput: OculusInput pre-init called
+[2017.03.03-00.54.42:205][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.03.03-00.54.42:569][  0]LogRenderer: Reallocating scene render targets to support 948x488 NumSamples 1 (Frame:2).
+[2017.03.03-00.54.42:830][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' took 0.66s
+[2017.03.03-00.54.44:168][  5]LogAssetRegistry: Asset discovery search completed in 17.2965 seconds
+[2017.03.03-00.54.44:168][  5]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000019 seconds (found 0 objects)
+[2017.03.03-00.54.44:168][  5]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000093 seconds (updated 0 objects)
+[2017.03.03-00.55.55:217][375]LogAIModule: Creating AISystem for world BoatLevel
+[2017.03.03-00.55.55:316][375]Cmd: MAP LOAD FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/FirstPersonBP/Maps/BoatLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.03-00.55.55:316][375]LightingResults: New page: Lighting Build
+[2017.03.03-00.55.55:318][375]LoadErrors: New page: Loading map: BoatLevel.umap
+[2017.03.03-00.55.55:320][375]MapCheck: New page: Map Check
+[2017.03.03-00.55.55:320][375]LightingResults: New page: Lighting Build
+[2017.03.03-00.55.55:397][375]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.03-00.55.55:511][375]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.03-00.55.55:600][375]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 88.936ms to complete.
+[2017.03.03-00.55.55:600][375]LogFileHelpers: Loading map 'BoatLevel' took 0.286
+[2017.03.03-00.56.00:313][533]AssetReimport: New page: Outstanding source content changes 2:56:00 PM
+[2017.03.03-00.56.00:317][533]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/roar.wav]
+[2017.03.03-00.56.00:318][533]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/roar.wav)
+[2017.03.03-00.56.00:320][533]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:322][533]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/screech.wav]
+[2017.03.03-00.56.00:324][533]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/screech.wav)
+[2017.03.03-00.56.00:327][533]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:357][534]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step1.wav]
+[2017.03.03-00.56.00:357][534]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step1.wav)
+[2017.03.03-00.56.00:359][534]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:361][534]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step2.wav]
+[2017.03.03-00.56.00:361][534]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step2.wav)
+[2017.03.03-00.56.00:363][534]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:365][534]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step3.wav]
+[2017.03.03-00.56.00:365][534]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step3.wav)
+[2017.03.03-00.56.00:368][534]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:370][534]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk1.wav]
+[2017.03.03-00.56.00:370][534]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk1.wav)
+[2017.03.03-00.56.00:372][534]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:373][534]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk10.wav]
+[2017.03.03-00.56.00:373][534]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk10.wav)
+[2017.03.03-00.56.00:375][534]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:385][535]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk11.wav]
+[2017.03.03-00.56.00:386][535]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk11.wav)
+[2017.03.03-00.56.00:387][535]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:389][535]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk2.wav]
+[2017.03.03-00.56.00:389][535]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk2.wav)
+[2017.03.03-00.56.00:391][535]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:392][535]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk3.wav]
+[2017.03.03-00.56.00:392][535]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk3.wav)
+[2017.03.03-00.56.00:394][535]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:396][535]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk4.wav]
+[2017.03.03-00.56.00:396][535]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk4.wav)
+[2017.03.03-00.56.00:398][535]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:399][535]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk5.wav]
+[2017.03.03-00.56.00:400][535]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk5.wav)
+[2017.03.03-00.56.00:402][535]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:413][536]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk6.wav]
+[2017.03.03-00.56.00:413][536]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk6.wav)
+[2017.03.03-00.56.00:416][536]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:417][536]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk7.wav]
+[2017.03.03-00.56.00:417][536]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk7.wav)
+[2017.03.03-00.56.00:419][536]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:421][536]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk8.wav]
+[2017.03.03-00.56.00:421][536]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk8.wav)
+[2017.03.03-00.56.00:423][536]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:424][536]LogEditorFactories: Performing atomic reimport of [C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk9.wav]
+[2017.03.03-00.56.00:424][536]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk9.wav)
+[2017.03.03-00.56.00:426][536]LogEditorFactories: -- imported successfully
+[2017.03.03-00.56.00:456][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave roar...
+[2017.03.03-00.56.00:526][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/roar" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/roar.uasset" SILENT=true
+[2017.03.03-00.56.00:558][536]LogSavePackage: Save=8.43ms
+[2017.03.03-00.56.00:558][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/roar6496E8FD4613AE921C81BBACFCE709E7.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/roar.uasset'
+[2017.03.03-00.56.00:561][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/roar.uasset
+[2017.03.03-00.56.00:608][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave screech...
+[2017.03.03-00.56.00:704][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/screech" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/screech.uasset" SILENT=true
+[2017.03.03-00.56.00:742][536]LogSavePackage: Save=14.99ms
+[2017.03.03-00.56.00:742][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/screechC6501434491B4C53B9A55D9689069B08.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/screech.uasset'
+[2017.03.03-00.56.00:746][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/screech.uasset
+[2017.03.03-00.56.00:790][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave step1...
+[2017.03.03-00.56.00:891][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/step1" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step1.uasset" SILENT=true
+[2017.03.03-00.56.00:923][536]LogSavePackage: Save=14.98ms
+[2017.03.03-00.56.00:923][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/step18716B80F44943DF0CDC5E490511B8621.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step1.uasset'
+[2017.03.03-00.56.00:927][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step1.uasset
+[2017.03.03-00.56.00:938][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave step2...
+[2017.03.03-00.56.00:979][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/step2" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step2.uasset" SILENT=true
+[2017.03.03-00.56.01:010][536]LogSavePackage: Save=14.24ms
+[2017.03.03-00.56.01:010][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/step21C7ECA464C701B5175240D97ED0720DA.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step2.uasset'
+[2017.03.03-00.56.01:013][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step2.uasset
+[2017.03.03-00.56.01:028][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave step3...
+[2017.03.03-00.56.01:111][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/step3" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step3.uasset" SILENT=true
+[2017.03.03-00.56.01:155][536]LogSavePackage: Save=24.47ms
+[2017.03.03-00.56.01:155][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/step374120EE049F5839ABA6A3A855C1826D0.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step3.uasset'
+[2017.03.03-00.56.01:162][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step3.uasset
+[2017.03.03-00.56.01:183][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk1...
+[2017.03.03-00.56.01:283][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk1" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk1.uasset" SILENT=true
+[2017.03.03-00.56.01:341][536]LogSavePackage: Save=26.70ms
+[2017.03.03-00.56.01:341][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk116558BD340C8DDD5F5004BA9F89A433E.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk1.uasset'
+[2017.03.03-00.56.01:348][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk1.uasset
+[2017.03.03-00.56.01:367][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk10...
+[2017.03.03-00.56.01:443][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk10" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk10.uasset" SILENT=true
+[2017.03.03-00.56.01:501][536]LogSavePackage: Save=23.74ms
+[2017.03.03-00.56.01:501][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk1074D57CC448196A8D56B657B287007F44.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk10.uasset'
+[2017.03.03-00.56.01:509][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk10.uasset
+[2017.03.03-00.56.01:527][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk11...
+[2017.03.03-00.56.01:603][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk11" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk11.uasset" SILENT=true
+[2017.03.03-00.56.01:643][536]LogSavePackage: Save=16.23ms
+[2017.03.03-00.56.01:643][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk11A73698BD4E70833D0EEE3EB3ADF8F81B.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk11.uasset'
+[2017.03.03-00.56.01:648][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk11.uasset
+[2017.03.03-00.56.01:661][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk2...
+[2017.03.03-00.56.01:710][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk2" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk2.uasset" SILENT=true
+[2017.03.03-00.56.01:759][536]LogSavePackage: Save=25.70ms
+[2017.03.03-00.56.01:759][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk202A3E0EB4C53A3D315FE059459FC85E2.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk2.uasset'
+[2017.03.03-00.56.01:765][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk2.uasset
+[2017.03.03-00.56.01:784][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk3...
+[2017.03.03-00.56.01:856][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk3" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk3.uasset" SILENT=true
+[2017.03.03-00.56.01:913][536]LogSavePackage: Save=24.37ms
+[2017.03.03-00.56.01:913][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk3A510F5DE4844DF9ADB45FEAAF0972E3E.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk3.uasset'
+[2017.03.03-00.56.01:920][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk3.uasset
+[2017.03.03-00.56.01:938][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk4...
+[2017.03.03-00.56.02:026][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk4" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk4.uasset" SILENT=true
+[2017.03.03-00.56.02:084][536]LogSavePackage: Save=24.82ms
+[2017.03.03-00.56.02:084][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk4DFD8C78E46DCD6464F39E1A6FD3956DA.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk4.uasset'
+[2017.03.03-00.56.02:090][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk4.uasset
+[2017.03.03-00.56.02:108][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk5...
+[2017.03.03-00.56.02:194][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk5" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk5.uasset" SILENT=true
+[2017.03.03-00.56.02:253][536]LogSavePackage: Save=26.24ms
+[2017.03.03-00.56.02:253][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk5C2198F004BC8026B693A5598128BB0C6.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk5.uasset'
+[2017.03.03-00.56.02:260][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk5.uasset
+[2017.03.03-00.56.02:276][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk6...
+[2017.03.03-00.56.02:351][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk6" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk6.uasset" SILENT=true
+[2017.03.03-00.56.02:388][536]LogSavePackage: Save=15.47ms
+[2017.03.03-00.56.02:388][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk69C3F91904182FD00F7DB5F8118738F59.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk6.uasset'
+[2017.03.03-00.56.02:391][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk6.uasset
+[2017.03.03-00.56.02:406][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk7...
+[2017.03.03-00.56.02:483][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk7" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk7.uasset" SILENT=true
+[2017.03.03-00.56.02:545][536]LogSavePackage: Save=26.67ms
+[2017.03.03-00.56.02:545][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk7F3444B4C40AD787D85D2C1A555D86E25.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk7.uasset'
+[2017.03.03-00.56.02:553][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk7.uasset
+[2017.03.03-00.56.02:571][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk8...
+[2017.03.03-00.56.02:669][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk8" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk8.uasset" SILENT=true
+[2017.03.03-00.56.02:727][536]LogSavePackage: Save=24.87ms
+[2017.03.03-00.56.02:727][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk8315A7C114C34732542EE2DA0A78272A2.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk8.uasset'
+[2017.03.03-00.56.02:735][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk8.uasset
+[2017.03.03-00.56.02:754][536]LogAudioDerivedData:Display: Building compressed audio format OGG wave walk9...
+[2017.03.03-00.56.02:838][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sounds/Enemy/walk9" FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk9.uasset" SILENT=true
+[2017.03.03-00.56.02:874][536]LogSavePackage: Save=15.07ms
+[2017.03.03-00.56.02:874][536]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/walk9A43E80FB476DE91E777136BC8BFFD021.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk9.uasset'
+[2017.03.03-00.56.02:880][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk9.uasset
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset roar from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/roar.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset screech from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/screech.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset step1 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step1.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset step2 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step2.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset step3 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/step3.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk1 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk1.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk10 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk10.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk11 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk11.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk2 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk2.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk3 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk3.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk4 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk4.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk5 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk5.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk6 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk6.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk7 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk7.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk8 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk8.wav.
+[2017.03.03-00.56.05:916][693]AssetReimport: Info Reimported asset walk9 from C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Sounds/Enemy/walk9.wav.
+[2017.03.03-00.56.17:635][231]UATHelper: Packaging (Windows (64-bit)): Running AutomationTool...
+[2017.03.03-00.56.17:917][244]UATHelper: Packaging (Windows (64-bit)): Automation.ParseCommandLine: Parsing command line: -ScriptsForProject="C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/FrostLine.uproject" BuildCookRun -nocompile -nocompileeditor -installed -nop4 -project="C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/FrostLine.uproject" -cook -stage -archive -archivedirectory=C:/Users/jgonzale5/Desktop -package -clientconfig=DebugGame -ue4exe=UE4Editor-Cmd.exe -pak -prereqs -nodebuginfo -targetplatform=Win64 -build -CrashReporter -utf8output
+[2017.03.03-00.56.17:921][244]UATHelper: Packaging (Windows (64-bit)): Automation.Process: Setting up command environment.
+[2017.03.03-00.56.18:545][273]UATHelper: Packaging (Windows (64-bit)): BuildCookRun.SetupParams: Setting up ProjectParams for C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine\FrostLine.uproject
+[2017.03.03-00.56.19:139][299]UATHelper: Packaging (Windows (64-bit)): Project.Build: ********** BUILD COMMAND STARTED **********
+[2017.03.03-00.56.19:180][301]UATHelper: Packaging (Windows (64-bit)): CommandUtils.Run: Run: C:\Program Files (x86)\Epic Games\4.14\Engine\Binaries\DotNET\UnrealBuildTool.exe FrostLine Win64 DebugGame -Project="C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine\FrostLine.uproject"  "C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine\FrostLine.uproject"  -remoteini="C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine" -noxge -generatemanifest -NoHotReload
+[2017.03.03-00.56.20:752][371]UATHelper: Packaging (Windows (64-bit)): CommandUtils.Run: Run: Took 1.5712031s to run UnrealBuildTool.exe, ExitCode=0
+[2017.03.03-00.56.20:791][373]UATHelper: Packaging (Windows (64-bit)): CommandUtils.Run: Run: C:\Program Files (x86)\Epic Games\4.14\Engine\Binaries\DotNET\UnrealBuildTool.exe FrostLine Win64 DebugGame -Project="C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine\FrostLine.uproject"  "C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine\FrostLine.uproject"  -remoteini="C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine" -noxge -NoHotReload -ignorejunk
+[2017.03.03-00.56.23:582][493]UATHelper: Packaging (Windows (64-bit)): UnrealBuildTool: Performing 1 actions (4 in parallel)
+[2017.03.03-00.56.23:582][493]UATHelper: Packaging (Windows (64-bit)): UnrealBuildTool: [1/1] Link FrostLine-Win64-DebugGame.exe
+[2017.03.03-00.56.23:908][506]UATHelper: Packaging (Windows (64-bit)): UnrealBuildTool: LINK : fatal error LNK1181: cannot open input file 'zlibstatic.lib'
+[2017.03.03-00.56.25:000][550]UATHelper: Packaging (Windows (64-bit)): UnrealBuildTool: ERROR: UBT ERROR: Failed to produce item: C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine\Binaries\Win64\FrostLine-Win64-DebugGame.exe
+[2017.03.03-00.56.25:000][550]UATHelper: Packaging (Windows (64-bit)): UnrealBuildTool: Total build time: 4.16 seconds
+[2017.03.03-00.56.25:106][554]UATHelper: Packaging (Windows (64-bit)): CommandUtils.Run: Run: Took 4.3122891s to run UnrealBuildTool.exe, ExitCode=5
+[2017.03.03-00.56.25:136][555]UATHelper: Packaging (Windows (64-bit)): Program.Main: ERROR: AutomationTool terminated with exception: AutomationTool.CommandUtils+CommandFailedException: Command failed (Result:5): C:\Program Files (x86)\Epic Games\4.14\Engine\Binaries\DotNET\UnrealBuildTool.exe FrostLine Win64 DebugGame -Project="C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine\FrostLine.uproject"  "C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine\FrostLine.uproject"  -remoteini="C:\Users\jgonzale5\Documents\Unreal Projects\FrostLine" -noxge -NoHotReload -ignorejunk. See logfile for details: 'UnrealBuildTool-2017.03.02-19.56.20.txt' 
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.CommandUtils.RunAndLog(String App, String CommandLine, String Logfile, Int32 MaxSuccessCode, String Input, ERunOptions Options, Dictionary`2 EnvVars, SpewFilterCallbackType SpewFilterCallback)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.CommandUtils.RunAndLog(CommandEnvironment Env, String App, String CommandLine, String LogName, Int32 MaxSuccessCode, String Input, ERunOptions Options, Dictionary`2 EnvVars, SpewFilterCallbackType SpewFilterCallback)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.CommandUtils.RunUBT(CommandEnvironment Env, String UBTExecutable, String CommandLine, String LogName, Dictionary`2 EnvVars)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.CommandUtils.RunUBT(CommandEnvironment Env, String UBTExecutable, FileReference Project, String Target, String Platform, String Config, String AdditionalArgs, String LogName, Dictionary`2 EnvVars)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.UE4Build.BuildWithUBT(String TargetName, UnrealTargetPlatform TargetPlatform, String Config, FileReference UprojectPath, Boolean ForceMonolithic, Boolean ForceNonUnity, Boolean ForceDebugInfo, Boolean ForceFlushMac, Boolean DisableXGE, String InAddArgs, Boolean ForceUnity, Dictionary`2 EnvVars)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.UE4Build.Build(BuildAgenda Agenda, Nullable`1 InDeleteBuildProducts, Boolean InUpdateVersionFiles, Boolean InForceNoXGE, Boolean InUseParallelExecutor, Boolean InForceNonUnity, Boolean InForceUnity, Boolean InShowProgress, Dictionary`2 PlatformEnvVars, Nullable`1 InChangelistNumberOverride, Dictionary`2 InTargetToManifest)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at Project.Build(BuildCommand Command, ProjectParams Params, Int32 WorkingCL, ProjectBuildTargets TargetMask)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at BuildCookRun.DoBuildCookRun(ProjectParams Params)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at BuildCookRun.ExecuteBuild()
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.BuildCommand.Execute()
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.Automation.Execute(List`1 CommandsToExecute, CaselessDictionary`1 Commands)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.Automation.Process(String[] Arguments)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.Program.MainProc(Object Param)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.InternalUtils.RunSingleInstance(Func`2 Main, Object Param)
+[2017.03.03-00.56.25:137][555]UATHelper: Packaging (Windows (64-bit)):    at AutomationTool.Program.Main()
+[2017.03.03-00.56.25:156][556]UATHelper: Packaging (Windows (64-bit)): Program.Main: AutomationTool exiting with ExitCode=5 (5)
+[2017.03.03-00.56.25:215][558]UATHelper: Packaging (Windows (64-bit)): BUILD FAILED
+[2017.03.03-00.56.25:216][558]PackagingResults:Error: Error Unknown Error
