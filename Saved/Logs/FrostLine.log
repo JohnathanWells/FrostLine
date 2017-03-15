@@ -1,9 +1,9 @@
-﻿Log file open, 03/13/17 18:38:02
+﻿Log file open, 03/14/17 18:51:07
 LogInit:Display: Running engine for game: FrostLine
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(1689144086) SRandInit(1689144086).
+LogInit:Display: RandInit(794129467) SRandInit(794129467).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.078097
+LogStats: Stats thread started at 0.075501
 LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
 LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
 LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
@@ -143,529 +143,760 @@ LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.14/Engine/Binaries/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.03.13-22.38.03:241][  0]LogInit: Selected Device Profile: [Windows]
-[2017.03.13-22.38.03:241][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.03.13-22.38.03:255][  0]LogInit: Computer: CND4220H97
-[2017.03.13-22.38.03:255][  0]LogInit: User: jgonzale5
-[2017.03.13-22.38.03:255][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.03.13-22.38.03:255][  0]LogInit: High frequency timer resolution =2.630641 MHz
-[2017.03.13-22.38.03:255][  0]LogMemory: Memory total: Physical=15.4GB (16GB approx)
-[2017.03.13-22.38.03:255][  0]LogMemory: Platform Memory Stats for Windows
-[2017.03.13-22.38.03:255][  0]LogMemory: Process Physical Memory: 263.46 MB used, 263.46 MB peak
-[2017.03.13-22.38.03:255][  0]LogMemory: Process Virtual Memory: 262.76 MB used, 262.76 MB peak
-[2017.03.13-22.38.03:255][  0]LogMemory: Physical Memory: 7357.41 MB used,  8443.70 MB free, 15801.11 MB total
-[2017.03.13-22.38.03:255][  0]LogMemory: Virtual Memory: 660.11 MB used,  8443.70 MB free, 134217728.00 MB total
-[2017.03.13-22.38.03:284][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2017.03.13-22.38.03:929][  0]LogD3D11RHI: D3D11 adapters:
-[2017.03.13-22.38.03:953][  0]LogD3D11RHI:    0. 'NVIDIA Quadro K2100M' (Feature Level 11_0)
-[2017.03.13-22.38.03:953][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.03.13-22.38.03:978][  0]LogD3D11RHI:    1. 'NVIDIA Quadro K2100M' (Feature Level 11_0)
-[2017.03.13-22.38.03:978][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
-[2017.03.13-22.38.03:979][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.03.13-22.38.03:979][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.03.13-22.38.03:979][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.03.13-22.38.03:988][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.03.13-22.38.03:988][  0]LogD3D11RHI:     GPU DeviceId: 0x11fc (for the marketing name, search the web for "GPU Device Id")
-[2017.03.13-22.38.03:988][  0]LogWindows: EnumDisplayDevices:
-[2017.03.13-22.38.03:988][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
-[2017.03.13-22.38.03:988][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.03.13-22.38.03:989][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.03.13-22.38.03:989][  0]LogWindows:    3. 'NVIDIA Quadro K2100M' (P:0 D:0)
-[2017.03.13-22.38.03:989][  0]LogWindows:    4. 'NVIDIA Quadro K2100M' (P:0 D:0)
-[2017.03.13-22.38.03:989][  0]LogWindows:    5. 'NVIDIA Quadro K2100M' (P:0 D:0)
-[2017.03.13-22.38.03:990][  0]LogWindows:    6. 'NVIDIA Quadro K2100M' (P:0 D:0)
-[2017.03.13-22.38.03:990][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
-[2017.03.13-22.38.03:990][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro K2100M
-[2017.03.13-22.38.03:990][  0]LogD3D11RHI:   Driver Version: 354.90 (internal:10.18.13.5490, unified:354.90)
-[2017.03.13-22.38.03:990][  0]LogD3D11RHI:      Driver Date: 4-5-2016
-[2017.03.13-22.38.03:990][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.03.13-22.38.04:019][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
-[2017.03.13-22.38.04:019][  0]LogD3D11RHI: Async texture creation enabled
-[2017.03.13-22.38.04:037][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2017.03.13-22.38.04:037][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Intermediate/Shaders/WorkingDirectory/15228/).
-[2017.03.13-22.38.04:038][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/jgonzale5/AppData/Local/Temp/UnrealShaderWorkingDir/BBCEC39047B9B4EB42BB6D88F282EAA2/'.
-[2017.03.13-22.38.04:038][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.03.13-22.38.05:144][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.03.13-22.38.05:198][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2017.03.13-22.38.05:246][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2017.03.13-22.38.05:292][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2017.03.13-22.38.05:339][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2017.03.13-22.38.05:386][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.03.13-22.38.05:434][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.03.13-22.38.05:483][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.03.13-22.38.05:526][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.03.13-22.38.05:574][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.03.13-22.38.05:624][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.03.13-22.38.05:679][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.03.13-22.38.05:739][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.03.13-22.38.05:788][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.03.13-22.38.05:841][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.03.13-22.38.05:933][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.03.13-22.38.05:933][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.03.13-22.38.05:963][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.03.13-22.38.06:041][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.03.13-22.38.06:072][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.03.13-22.38.06:118][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.03.13-22.38.06:169][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.03.13-22.38.06:216][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.03.13-22.38.06:261][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.03.13-22.38.06:261][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.03.13-22.38.06:575][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.03.13-22.38.06:623][  0]LogDerivedDataCache: Loaded boot cache 0.05s 50MB C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
-[2017.03.13-22.38.06:623][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
-[2017.03.13-22.38.06:623][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.03.13-22.38.06:623][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.03.13-22.38.06:623][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.03.13-22.38.06:623][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.03.13-22.38.06:639][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.03.13-22.38.06:651][  0]LogDerivedDataCache: Using Local data cache path C:/Users/jgonzale5/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.03.13-22.38.06:840][  0]LogInit: Selected Device Profile: [Windows]
-[2017.03.13-22.38.06:843][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.03.13-22.38.07:020][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.03.13-22.38.07:053][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.03.13-22.38.07:089][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.03.13-22.38.07:089][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2017.03.13-22.38.07:089][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.03.13-22.38.07:549][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: frostline, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3589263868
-[2017.03.13-22.38.07:602][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
-[2017.03.13-22.38.07:647][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.027029 seconds
-[2017.03.13-22.38.07:654][  0]LogUObjectArray: 31947 objects as part of root set at end of initial load.
-[2017.03.13-22.38.07:654][  0]LogUObjectAllocator: 6936072 out of 0 bytes used by permanent object pool.
-[2017.03.13-22.38.07:654][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.03.13-22.38.07:708][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.03.13-22.38.08:285][  0]LogSlate: Using Freetype 2.6.0
-[2017.03.13-22.38.08:285][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.03.13-22.38.08:285][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.03.13-22.38.08:982][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.03.13-22.38.09:016][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.03.13-22.38.09:335][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.03.13-22.38.09:669][  0]SourceControl: Info Source control is disabled
-[2017.03.13-22.38.09:670][  0]SourceControl: Info Source control is disabled
-[2017.03.13-22.38.09:706][  0]SourceControl: Info Source control is disabled
-[2017.03.13-22.38.09:740][  0]SourceControl: Info Source control is disabled
-[2017.03.13-22.38.10:742][  0]LogEngine: Initializing Engine...
-[2017.03.13-22.38.10:742][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.03.13-22.38.10:941][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.03.13-22.38.10:946][  0]LogInit: XAudio2 using 'Speakers / HP (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.13-22.38.10:958][  0]LogInit: FAudioDevice initialized.
-[2017.03.13-22.38.10:984][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
-[2017.03.13-22.38.10:991][  0]LogInit: Texture streaming: Enabled
-[2017.03.13-22.38.11:131][  0]LogInit: Transaction tracking system initialized
-[2017.03.13-22.38.11:386][  0]BlueprintLog: New page: Editor Load
-[2017.03.13-22.38.12:064][  0]LocalizationService: Info Localization service is disabled
-[2017.03.13-22.38.12:568][  0]LogConsoleResponse:Display: 
-[2017.03.13-22.38.12:686][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.03.13-22.38.12:686][  0]LogCook:Display: Mobile HDR setting 1
-[2017.03.13-22.38.12:704][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' took 0.02s
-[2017.03.13-22.38.13:393][  0]SourceControl: Info Source control is disabled
-[2017.03.13-22.38.13:393][  0]Cmd: MAP LOAD FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/FirstPersonBP/Maps/BoatLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.03.13-22.38.13:394][  0]LightingResults: New page: Lighting Build
-[2017.03.13-22.38.13:424][  0]MapCheck: New page: Map Check
-[2017.03.13-22.38.13:424][  0]LightingResults: New page: Lighting Build
-[2017.03.13-22.38.14:465][  0]LogAIModule: Creating AISystem for world BoatLevel
-[2017.03.13-22.38.14:484][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.03.13-22.38.14:486][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.03.13-22.38.14:533][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 47.044ms to complete.
-[2017.03.13-22.38.14:533][  0]LogFileHelpers: Loading map 'BoatLevel' took 1.139
-[2017.03.13-22.38.14:680][  0]LogCollectionManager: Loaded 1 collections in 0.001338 seconds
-[2017.03.13-22.38.14:772][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/Collections/' took 0.01s
-[2017.03.13-22.38.14:772][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Developers/jgonzale5/Collections/' took 0.01s
-[2017.03.13-22.38.14:772][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Collections/' took 0.01s
-[2017.03.13-22.38.14:772][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000003 seconds
-[2017.03.13-22.38.14:773][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
-[2017.03.13-22.38.14:781][  0]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2190 classes and 428 folders.
-[2017.03.13-22.38.14:813][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.03.13-22.38.14:813][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.03.13-22.38.14:814][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0010 seconds. Added 13 classes and 0 folders.
-[2017.03.13-22.38.14:862][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0010 seconds. Added 0 classes and 0 folders.
-[2017.03.13-22.38.14:894][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0011 seconds. Added 0 classes and 0 folders.
-[2017.03.13-22.38.14:937][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
-[2017.03.13-22.38.14:958][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.03.13-22.38.14:963][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2017.03.13-22.38.15:019][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
-[2017.03.13-22.38.15:020][  0]LogLoad: (Engine Initialization) Total time: 13.39 seconds
-[2017.03.13-22.38.15:020][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.40 seconds
-[2017.03.13-22.38.15:020][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
-[2017.03.13-22.38.15:359][  0]LogOcInput: OculusInput pre-init called
-[2017.03.13-22.38.15:403][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.03.13-22.38.15:571][  0]LogRenderer: Reallocating scene render targets to support 948x488 NumSamples 1 (Frame:2).
-[2017.03.13-22.38.15:692][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' took 0.32s
-[2017.03.13-22.38.15:712][  1]LogAssetRegistry: Asset discovery search completed in 8.1337 seconds
-[2017.03.13-22.38.15:713][  1]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000016 seconds (found 0 objects)
-[2017.03.13-22.38.15:713][  1]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000029 seconds (updated 0 objects)
-[2017.03.13-22.38.24:064][218]LogTemp: Repeting last play command: Selected Viewport
-[2017.03.13-22.38.24:087][218]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
-[2017.03.13-22.38.24:087][218]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.03.13-22.38.24:088][218]PIE: New page: PIE session: BoatLevel (Mar 13, 2017, 2:38:24 PM)
-[2017.03.13-22.38.24:088][218]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel
-[2017.03.13-22.38.24:119][218]LogPlayLevel: PIE: StaticDuplicateObject took: (0.031145s)
-[2017.03.13-22.38.24:121][218]LogAIModule: Creating AISystem for world BoatLevel
-[2017.03.13-22.38.24:121][218]LogPlayLevel: PIE: World Init took: (0.002206s)
-[2017.03.13-22.38.24:122][218]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/BoatLevel.BoatLevel to /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel (0.033769s)
-[2017.03.13-22.38.24:155][218]LogInit: XAudio2 using 'Speakers / HP (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.13-22.38.24:165][218]LogInit: FAudioDevice initialized.
-[2017.03.13-22.38.24:213][218]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2017.03.13-22.38.24:219][218]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel up for play (max tick rate 0) at 2017.03.13-18.38.24
-[2017.03.13-22.38.24:221][218]LogWorld: Bringing up level for play took: 0.006762
-[2017.03.13-22.38.24:253][218]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0012 seconds. Added 11 classes and 0 folders.
-[2017.03.13-22.38.24:259][218]LogBlueprintUserMessages: [FirstPersonExampleMap_C_0] Spawned
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:260][218]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.38.24:261][218]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel -0.617
-[2017.03.13-22.38.24:261][218]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
-[2017.03.13-22.38.26:412][308]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
-[2017.03.13-22.38.26:485][308]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
-[2017.03.13-22.38.34:493][615]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0014 seconds. Added 111 classes and 0 folders.
-[2017.03.13-22.41.47:381][590]BlueprintLog: New page: Compile FirstPersonCharacter
-[2017.03.13-22.41.47:737][590]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  <
-[2017.03.13-22.41.47:737][590]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  ==
-[2017.03.13-22.41.47:737][590]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  <
-[2017.03.13-22.41.47:737][590]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  ==
-[2017.03.13-22.41.48:347][599]LogSavePackage: Save=167.04ms
-[2017.03.13-22.41.48:347][599]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/FirstPersonCharacter00D4558B440FA41D09DD6CA2D5AAAB75.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset'
-[2017.03.13-22.41.48:350][599]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset
-[2017.03.13-22.41.51:886][763]LogTemp: Repeting last play command: Selected Viewport
-[2017.03.13-22.41.51:922][763]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
-[2017.03.13-22.41.51:922][763]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.03.13-22.41.51:922][763]PIE: New page: PIE session: BoatLevel (Mar 13, 2017, 2:41:51 PM)
-[2017.03.13-22.41.51:922][763]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel
-[2017.03.13-22.41.51:957][763]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034695s)
-[2017.03.13-22.41.51:958][763]LogAIModule: Creating AISystem for world BoatLevel
-[2017.03.13-22.41.51:958][763]LogPlayLevel: PIE: World Init took: (0.001704s)
-[2017.03.13-22.41.51:959][763]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/BoatLevel.BoatLevel to /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel (0.036807s)
-[2017.03.13-22.41.51:987][763]LogInit: XAudio2 using 'Speakers / HP (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.03.13-22.41.51:998][763]LogInit: FAudioDevice initialized.
-[2017.03.13-22.41.52:032][763]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2017.03.13-22.41.52:038][763]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel up for play (max tick rate 0) at 2017.03.13-18.41.52
-[2017.03.13-22.41.52:039][763]LogWorld: Bringing up level for play took: 0.005884
-[2017.03.13-22.41.52:045][763]LogBlueprintUserMessages: [FirstPersonExampleMap_C_0] Spawned
-[2017.03.13-22.41.52:045][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:045][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:045][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:045][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:045][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:045][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:045][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:045][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
-[2017.03.13-22.41.52:046][763]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel -0.835
-[2017.03.13-22.41.52:046][763]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
-[2017.03.13-22.42.19:793][ 61]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
-[2017.03.13-22.42.19:862][ 61]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
-[2017.03.13-22.43.03:302][314]BlueprintLog: New page: Compile FirstPersonCharacter
-[2017.03.13-22.43.03:649][314]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  <
-[2017.03.13-22.43.03:649][314]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  ==
-[2017.03.13-22.43.03:649][314]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  <
-[2017.03.13-22.43.03:649][314]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  ==
-[2017.03.13-22.43.08:523][513]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.03.13-22.43.08:712][514]Cmd: QUIT_EDITOR
-[2017.03.13-22.43.08:809][514]LogExit: Preparing to exit.
-[2017.03.13-22.43.09:336][514]LogDirectoryWatcher: A directory notification for 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' was aborted.
-[2017.03.13-22.43.09:378][514]LogExit: Editor shut down
-[2017.03.13-22.43.09:379][514]LogExit: Transaction tracking system shut down
-[2017.03.13-22.43.09:487][514]LogObj: Freed 0b from 0 cluster array pools.
-[2017.03.13-22.43.09:487][514]LogExit: Object subsystem successfully closed.
-[2017.03.13-22.43.09:501][514]LogD3D11RHI: Shutdown
-[2017.03.13-22.43.09:501][514]LogD3D11RHI: CleanupD3DDevice
-[2017.03.13-22.43.09:564][514]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.03.13-22.43.09:575][514]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.03.13-22.43.09:575][514]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BE774156B-4ACC-6939-BA2C-3F8B37284DBF%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.14.3-3249277%2B%2B%2BUE4%2BRelease-4.14&UserID=75a9939646c1f11a0845ea95ccdb70ff%7Cea9647959b1b4b3d80099dcdaf89dc45%7C7424aeae-cf7d-4839-8f7c-bce65b5c5681&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.03.13-22.43.09:587][514]LogModuleManager: Shutting down and abandoning module BlueprintGraph (245)
-[2017.03.13-22.43.09:587][514]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (244)
-[2017.03.13-22.43.09:587][514]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (243)
-[2017.03.13-22.43.09:587][514]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (242)
-[2017.03.13-22.43.09:588][514]LogModuleManager: Shutting down and abandoning module CrashTracker (241)
-[2017.03.13-22.43.09:588][514]LogModuleManager: Shutting down and abandoning module SceneOutliner (240)
-[2017.03.13-22.43.09:588][514]LogModuleManager: Shutting down and abandoning module WidgetCarousel (239)
-[2017.03.13-22.43.09:588][514]LogModuleManager: Shutting down and abandoning module AddContentDialog (238)
-[2017.03.13-22.43.09:588][514]LogDirectoryWatcher: A directory notification for 'C:/Program Files (x86)/Epic Games/4.14/FeaturePacks/' was aborted.
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module GameplayTags (237)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module EditorWidgets (236)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module CollectionManager (235)
-[2017.03.13-22.43.09:589][514]LogDirectoryWatcher: A directory notification for 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Collections/' was aborted.
-[2017.03.13-22.43.09:589][514]LogDirectoryWatcher: A directory notification for 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Developers/jgonzale5/Collections/' was aborted.
-[2017.03.13-22.43.09:589][514]LogDirectoryWatcher: A directory notification for 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/Collections/' was aborted.
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module StatsViewer (234)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module FoliageEdit (233)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module LandscapeEditor (232)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (231)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module ActorPickerMode (230)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module GeometryMode (229)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module TextureAlignMode (228)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module BspMode (227)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module HardwareSurvey (226)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (225)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module AutomationWorker (224)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (223)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module PlacementMode (222)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (221)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (220)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (219)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (218)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (217)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module Media (216)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (215)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (214)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module CharacterAI (213)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module SequenceRecorder (212)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module AudioCapture (211)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module SmartSnapping (210)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module SessionServices (209)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module ViewportSnapping (208)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module ViewportInteraction (207)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module LogVisualizer (206)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (205)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module IntroTutorials (204)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (203)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (202)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (201)
-[2017.03.13-22.43.09:589][514]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (200)
-[2017.03.13-22.43.10:524][514]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (199)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (198)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (197)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module InputBindingEditor (196)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module NiagaraEditor (195)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module MergeActors (194)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module SizeMap (193)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module TreeMap (192)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module ReferenceViewer (191)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module LocalizationService (190)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (189)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module HardwareTargeting (188)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (187)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module UndoHistory (186)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module UserFeedback (185)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module XmlParser (184)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module Blutility (183)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (182)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (181)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (180)
-[2017.03.13-22.43.10:525][514]LogModuleManager: Shutting down and abandoning module SettingsEditor (179)
-[2017.03.13-22.43.10:526][514]LogModuleManager: Shutting down and abandoning module ProjectLauncher (178)
-[2017.03.13-22.43.10:526][514]LogModuleManager: Shutting down and abandoning module SessionFrontend (177)
-[2017.03.13-22.43.10:526][514]LogModuleManager: Shutting down and abandoning module ProfilerClient (176)
-[2017.03.13-22.43.10:526][514]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (175)
-[2017.03.13-22.43.10:526][514]LogModuleManager: Shutting down and abandoning module DeviceManager (174)
-[2017.03.13-22.43.10:581][514]LogModuleManager: Shutting down and abandoning module AutomationController (173)
-[2017.03.13-22.43.10:581][514]LogModuleManager: Shutting down and abandoning module AutomationWindow (172)
-[2017.03.13-22.43.10:581][514]LogModuleManager: Shutting down and abandoning module Layers (171)
-[2017.03.13-22.43.10:581][514]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (170)
-[2017.03.13-22.43.10:581][514]LogModuleManager: Shutting down and abandoning module DetailCustomizations (169)
-[2017.03.13-22.43.10:581][514]LogModuleManager: Shutting down and abandoning module PackagesDialog (168)
-[2017.03.13-22.43.10:581][514]LogModuleManager: Shutting down and abandoning module AnimGraph (167)
-[2017.03.13-22.43.10:581][514]LogModuleManager: Shutting down and abandoning module Persona (166)
-[2017.03.13-22.43.10:581][514]LogModuleManager: Shutting down and abandoning module Kismet (165)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module GraphEditor (164)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module ClassViewer (163)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module Toolbox (162)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module ModuleUI (161)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module MovieSceneTools (160)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module OutputLog (159)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module GammaUI (158)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module Documentation (157)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module Niagara (156)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (155)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module AnalyticsET (154)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module PortalServices (153)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module PortalRpc (152)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module MessagingRpc (151)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module GameplayDebugger (150)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module AITestSuite (149)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module AIModule (148)
-[2017.03.13-22.43.10:599][514]LogModuleManager: Shutting down and abandoning module ProfilerService (147)
-[2017.03.13-22.43.10:771][514]LogModuleManager: Shutting down and abandoning module TaskGraph (146)
-[2017.03.13-22.43.10:771][514]LogModuleManager: Shutting down and abandoning module SlateRemote (145)
-[2017.03.13-22.43.10:771][514]LogModuleManager: Shutting down and abandoning module SteamVRController (144)
-[2017.03.13-22.43.10:771][514]LogModuleManager: Shutting down and abandoning module SteamVR (143)
-[2017.03.13-22.43.10:771][514]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (142)
-[2017.03.13-22.43.10:771][514]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (141)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module OculusLibrary (140)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module OculusInput (139)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (138)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (137)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module CableComponent (136)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (135)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (133)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module HTML5Networking (132)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (131)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module GeometryCache (130)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module AlembicLibrary (129)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module AlembicImporter (128)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module SuperSearch (127)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (126)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (125)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module PluginBrowser (124)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (123)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module EpicSurvey (122)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module DesktopPlatform (121)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (120)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module UObjectPlugin (119)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (118)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (117)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module SourceControl (116)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module GitSourceControl (115)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (114)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (113)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (112)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module MeshPaint (111)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (110)
-[2017.03.13-22.43.10:772][514]LogModuleManager: Shutting down and abandoning module HotReload (109)
-[2017.03.13-22.43.10:772][514]LogDirectoryWatcher: A directory notification for 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Binaries/Win64' was aborted.
-[2017.03.13-22.43.10:773][514]LogModuleManager: Shutting down and abandoning module MainFrame (108)
-[2017.03.13-22.43.10:773][514]LogModuleManager: Shutting down and abandoning module LevelEditor (107)
-[2017.03.13-22.43.10:774][514]LogModuleManager: Shutting down and abandoning module ContentBrowser (106)
-[2017.03.13-22.43.10:776][514]LogModuleManager: Shutting down and abandoning module Paper2DEditor (105)
-[2017.03.13-22.43.10:776][514]LogModuleManager: Shutting down and abandoning module FrostLine (104)
-[2017.03.13-22.43.10:776][514]LogModuleManager: Shutting down and abandoning module UdpMessaging (103)
-[2017.03.13-22.43.10:876][514]LogModuleManager: Shutting down and abandoning module TcpMessaging (102)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (101)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module Paper2D (100)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (99)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module WmfMedia (98)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module MediaAssets (97)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (96)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (95)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module VREditor (94)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (93)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (92)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module FunctionalTesting (91)
-[2017.03.13-22.43.10:977][514]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (90)
-[2017.03.13-22.43.10:978][514]LogModuleManager: Shutting down and abandoning module Sequencer (89)
-[2017.03.13-22.43.10:978][514]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (88)
-[2017.03.13-22.43.10:978][514]LogModuleManager: Shutting down and abandoning module MessageLog (87)
-[2017.03.13-22.43.10:978][514]LogModuleManager: Shutting down and abandoning module AssetTools (86)
-[2017.03.13-22.43.10:978][514]LogModuleManager: Shutting down and abandoning module UMGEditor (85)
-[2017.03.13-22.43.10:978][514]LogModuleManager: Shutting down and abandoning module UMG (84)
-[2017.03.13-22.43.10:978][514]LogModuleManager: Shutting down and abandoning module SlateReflector (83)
-[2017.03.13-22.43.10:978][514]LogModuleManager: Shutting down and abandoning module Slate (82)
-[2017.03.13-22.43.10:978][514]LogModuleManager: Shutting down and abandoning module EditorStyle (81)
-[2017.03.13-22.43.10:982][514]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (80)
-[2017.03.13-22.43.10:982][514]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (79)
-[2017.03.13-22.43.10:982][514]LogModuleManager: Shutting down and abandoning module XAudio2 (78)
-[2017.03.13-22.43.10:982][514]LogModuleManager: Shutting down and abandoning module Networking (76)
-[2017.03.13-22.43.10:982][514]LogModuleManager: Shutting down and abandoning module Core (75)
-[2017.03.13-22.43.10:982][514]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (74)
-[2017.03.13-22.43.10:982][514]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.03.13-22.43.10:982][514]LogDirectoryWatcher: A directory notification for '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' was aborted.
-[2017.03.13-22.43.10:982][514]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.03.13-22.43.10:983][514]LogModuleManager: Shutting down and abandoning module AssetRegistry (73)
-[2017.03.13-22.43.11:149][514]LogModuleManager: Shutting down and abandoning module KismetCompiler (72)
-[2017.03.13-22.43.11:149][514]LogModuleManager: Shutting down and abandoning module PhysXFormats (71)
-[2017.03.13-22.43.11:149][514]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (70)
-[2017.03.13-22.43.11:149][514]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (69)
-[2017.03.13-22.43.11:149][514]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (68)
-[2017.03.13-22.43.11:149][514]LogModuleManager: Shutting down and abandoning module PropertyEditor (67)
-[2017.03.13-22.43.11:149][514]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
-[2017.03.13-22.43.11:149][514]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
-[2017.03.13-22.43.11:167][514]LogDerivedDataCache: Shutdown
-[2017.03.13-22.43.11:167][514]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
-[2017.03.13-22.43.11:167][514]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
-[2017.03.13-22.43.11:167][514]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
-[2017.03.13-22.43.11:167][514]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
-[2017.03.13-22.43.11:167][514]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
-[2017.03.13-22.43.11:167][514]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
-[2017.03.13-22.43.11:167][514]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
-[2017.03.13-22.43.11:167][514]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module Messaging (45)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (30)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (29)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (28)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (27)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module InputCore (24)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module Settings (23)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module OculusRift (22)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (21)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (20)
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
-[2017.03.13-22.43.11:168][514]LogOnline:Display: Unloading online subsystem: NULL
-[2017.03.13-22.43.11:168][514]LogModuleManager: Shutting down and abandoning module SSL (17)
-[2017.03.13-22.43.11:170][514]LogModuleManager: Shutting down and abandoning module HTTP (16)
-[2017.03.13-22.43.11:170][514]LogModuleManager: Shutting down and abandoning module XMPP (15)
-[2017.03.13-22.43.11:170][514]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2017.03.13-22.43.11:170][514]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2017.03.13-22.43.11:170][514]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2017.03.13-22.43.11:170][514]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2017.03.13-22.43.11:173][514]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2017.03.13-22.43.11:173][514]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2017.03.13-22.43.11:173][514]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2017.03.13-22.43.11:173][514]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2017.03.13-22.43.11:173][514]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2017.03.13-22.43.11:173][514]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2017.03.13-22.43.11:173][514]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2017.03.13-22.43.11:173][514]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2017.03.13-22.43.11:173][514]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2017.03.13-22.43.11:173][514]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2017.03.13-22.43.11:175][514]LogExit: Exiting.
-[2017.03.13-22.43.11:178][514]Log file closed, 03/13/17 18:43:11
+[2017.03.14-22.51.08:065][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.14-22.51.08:065][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.14-22.51.08:081][  0]LogInit: Computer: CND4220H97
+[2017.03.14-22.51.08:081][  0]LogInit: User: jgonzale5
+[2017.03.14-22.51.08:081][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.03.14-22.51.08:081][  0]LogInit: High frequency timer resolution =2.630644 MHz
+[2017.03.14-22.51.08:081][  0]LogMemory: Memory total: Physical=15.4GB (16GB approx)
+[2017.03.14-22.51.08:081][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.14-22.51.08:081][  0]LogMemory: Process Physical Memory: 263.50 MB used, 263.50 MB peak
+[2017.03.14-22.51.08:081][  0]LogMemory: Process Virtual Memory: 262.95 MB used, 262.95 MB peak
+[2017.03.14-22.51.08:081][  0]LogMemory: Physical Memory: 6873.04 MB used,  8928.06 MB free, 15801.11 MB total
+[2017.03.14-22.51.08:081][  0]LogMemory: Virtual Memory: 660.11 MB used,  8928.06 MB free, 134217728.00 MB total
+[2017.03.14-22.51.08:104][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.03.14-22.51.08:735][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.14-22.51.08:765][  0]LogD3D11RHI:    0. 'NVIDIA Quadro K2100M' (Feature Level 11_0)
+[2017.03.14-22.51.08:765][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.03.14-22.51.08:785][  0]LogD3D11RHI:    1. 'NVIDIA Quadro K2100M' (Feature Level 11_0)
+[2017.03.14-22.51.08:785][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
+[2017.03.14-22.51.08:786][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.14-22.51.08:786][  0]LogD3D11RHI:       1958/0/7900 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.14-22.51.08:786][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.14-22.51.08:792][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.14-22.51.08:792][  0]LogD3D11RHI:     GPU DeviceId: 0x11fc (for the marketing name, search the web for "GPU Device Id")
+[2017.03.14-22.51.08:792][  0]LogWindows: EnumDisplayDevices:
+[2017.03.14-22.51.08:792][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2017.03.14-22.51.08:792][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.03.14-22.51.08:792][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.03.14-22.51.08:792][  0]LogWindows:    3. 'NVIDIA Quadro K2100M' (P:0 D:0)
+[2017.03.14-22.51.08:792][  0]LogWindows:    4. 'NVIDIA Quadro K2100M' (P:0 D:0)
+[2017.03.14-22.51.08:792][  0]LogWindows:    5. 'NVIDIA Quadro K2100M' (P:0 D:0)
+[2017.03.14-22.51.08:792][  0]LogWindows:    6. 'NVIDIA Quadro K2100M' (P:0 D:0)
+[2017.03.14-22.51.08:792][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.03.14-22.51.08:792][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro K2100M
+[2017.03.14-22.51.08:792][  0]LogD3D11RHI:   Driver Version: 354.90 (internal:10.18.13.5490, unified:354.90)
+[2017.03.14-22.51.08:792][  0]LogD3D11RHI:      Driver Date: 4-5-2016
+[2017.03.14-22.51.08:792][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.03.14-22.51.08:807][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
+[2017.03.14-22.51.08:807][  0]LogD3D11RHI: Async texture creation enabled
+[2017.03.14-22.51.08:824][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.03.14-22.51.08:824][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Intermediate/Shaders/WorkingDirectory/12408/).
+[2017.03.14-22.51.08:825][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/jgonzale5/AppData/Local/Temp/UnrealShaderWorkingDir/F82FC9AC447E0E076C0D07ACDE3212F7/'.
+[2017.03.14-22.51.08:825][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.14-22.51.09:868][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.14-22.51.09:913][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.03.14-22.51.09:960][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.03.14-22.51.10:007][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.03.14-22.51.10:052][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.03.14-22.51.10:098][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.14-22.51.10:142][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.14-22.51.10:188][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.14-22.51.10:227][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.14-22.51.10:273][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.14-22.51.10:318][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.14-22.51.10:367][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.14-22.51.10:411][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.14-22.51.10:455][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.14-22.51.10:499][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.14-22.51.10:589][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.14-22.51.10:589][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.14-22.51.10:617][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.14-22.51.10:688][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.14-22.51.10:719][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.14-22.51.10:764][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.03.14-22.51.10:810][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.03.14-22.51.10:855][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.03.14-22.51.10:899][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.03.14-22.51.10:899][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.14-22.51.11:205][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.14-22.51.11:258][  0]LogDerivedDataCache: Loaded boot cache 0.05s 50MB C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.03.14-22.51.11:258][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
+[2017.03.14-22.51.11:259][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.14-22.51.11:259][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.14-22.51.11:259][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.03.14-22.51.11:259][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.03.14-22.51.11:275][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.03.14-22.51.11:287][  0]LogDerivedDataCache: Using Local data cache path C:/Users/jgonzale5/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.03.14-22.51.11:503][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.14-22.51.11:505][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.14-22.51.11:682][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.03.14-22.51.11:714][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.03.14-22.51.11:748][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.03.14-22.51.11:748][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.03.14-22.51.11:748][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.14-22.51.12:204][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: frostline, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3589263868
+[2017.03.14-22.51.12:253][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
+[2017.03.14-22.51.12:298][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.026982 seconds
+[2017.03.14-22.51.12:304][  0]LogUObjectArray: 31947 objects as part of root set at end of initial load.
+[2017.03.14-22.51.12:304][  0]LogUObjectAllocator: 6936072 out of 0 bytes used by permanent object pool.
+[2017.03.14-22.51.12:304][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.14-22.51.12:352][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.14-22.51.12:920][  0]LogSlate: Using Freetype 2.6.0
+[2017.03.14-22.51.12:921][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.14-22.51.12:921][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.14-22.51.13:612][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.03.14-22.51.13:644][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.14-22.51.13:965][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.03.14-22.51.14:266][  0]SourceControl: Info Source control is disabled
+[2017.03.14-22.51.14:267][  0]SourceControl: Info Source control is disabled
+[2017.03.14-22.51.14:302][  0]SourceControl: Info Source control is disabled
+[2017.03.14-22.51.14:336][  0]SourceControl: Info Source control is disabled
+[2017.03.14-22.51.15:194][  0]LogEngine: Initializing Engine...
+[2017.03.14-22.51.15:195][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.03.14-22.51.15:397][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.03.14-22.51.15:402][  0]LogInit: XAudio2 using 'Speakers / HP (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.03.14-22.51.15:414][  0]LogInit: FAudioDevice initialized.
+[2017.03.14-22.51.15:441][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/jgonzale5/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.03.14-22.51.15:449][  0]LogInit: Texture streaming: Enabled
+[2017.03.14-22.51.15:655][  0]LogInit: Transaction tracking system initialized
+[2017.03.14-22.51.15:920][  0]BlueprintLog: New page: Editor Load
+[2017.03.14-22.51.16:617][  0]LocalizationService: Info Localization service is disabled
+[2017.03.14-22.51.17:123][  0]LogConsoleResponse:Display: 
+[2017.03.14-22.51.17:257][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.03.14-22.51.17:257][  0]LogCook:Display: Mobile HDR setting 1
+[2017.03.14-22.51.17:974][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' took 0.02s
+[2017.03.14-22.51.18:011][  0]SourceControl: Info Source control is disabled
+[2017.03.14-22.51.18:012][  0]Cmd: MAP LOAD FILE="../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/FirstPersonBP/Maps/BoatLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.14-22.51.18:015][  0]LightingResults: New page: Lighting Build
+[2017.03.14-22.51.18:063][  0]MapCheck: New page: Map Check
+[2017.03.14-22.51.18:064][  0]LightingResults: New page: Lighting Build
+[2017.03.14-22.51.19:741][  0]LogAIModule: Creating AISystem for world BoatLevel
+[2017.03.14-22.51.19:768][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.14-22.51.19:770][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.14-22.51.19:823][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 53.157ms to complete.
+[2017.03.14-22.51.19:823][  0]LogFileHelpers: Loading map 'BoatLevel' took 1.812
+[2017.03.14-22.51.19:971][  0]LogCollectionManager: Loaded 1 collections in 0.003657 seconds
+[2017.03.14-22.51.20:049][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/Collections/' took 0.01s
+[2017.03.14-22.51.20:049][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Developers/jgonzale5/Collections/' took 0.01s
+[2017.03.14-22.51.20:049][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Collections/' took 0.01s
+[2017.03.14-22.51.20:049][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000005 seconds
+[2017.03.14-22.51.20:049][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
+[2017.03.14-22.51.20:063][  0]LogContentBrowser: Native class hierarchy populated in 0.0136 seconds. Added 2186 classes and 422 folders.
+[2017.03.14-22.51.20:103][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.14-22.51.20:103][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.03.14-22.51.20:104][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0011 seconds. Added 13 classes and 0 folders.
+[2017.03.14-22.51.20:160][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0017 seconds. Added 0 classes and 0 folders.
+[2017.03.14-22.51.20:403][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0012 seconds. Added 0 classes and 0 folders.
+[2017.03.14-22.51.20:450][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2017.03.14-22.51.20:478][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.14-22.51.20:483][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.03.14-22.51.20:547][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2017.03.14-22.51.20:548][  0]LogLoad: (Engine Initialization) Total time: 14.03 seconds
+[2017.03.14-22.51.20:548][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.45 seconds
+[2017.03.14-22.51.20:548][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.03.14-22.51.20:888][  0]LogOcInput: OculusInput pre-init called
+[2017.03.14-22.51.20:927][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.03.14-22.51.21:148][  0]LogRenderer: Reallocating scene render targets to support 948x488 NumSamples 1 (Frame:2).
+[2017.03.14-22.51.21:238][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' took 0.34s
+[2017.03.14-22.51.21:576][  2]LogAssetRegistry: Asset discovery search completed in 9.3461 seconds
+[2017.03.14-22.51.21:576][  2]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000006 seconds (found 0 objects)
+[2017.03.14-22.51.21:576][  2]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000018 seconds (updated 0 objects)
+[2017.03.14-22.52.49:116][416]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0015 seconds. Added 111 classes and 0 folders.
+[2017.03.14-22.53.43:623][  4]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (nodoors)
+[2017.03.14-22.54.51:631][332]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.14-22.54.51:669][332]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.54.51:670][332]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.03.14-22.54.51:670][332]LogPlayLevel: [PlayLevel] Compiling FirstPersonCharacter before play...
+[2017.03.14-22.54.52:036][332]LogPlayLevel: PlayLevel: Blueprint regeneration took 366 ms (1 blueprints)
+[2017.03.14-22.54.52:036][332]PIE: New page: PIE session: BoatLevel (Mar 14, 2017, 2:54:52 PM)
+[2017.03.14-22.54.52:036][332]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel
+[2017.03.14-22.54.52:065][332]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028400s)
+[2017.03.14-22.54.52:066][332]LogAIModule: Creating AISystem for world BoatLevel
+[2017.03.14-22.54.52:066][332]LogPlayLevel: PIE: World Init took: (0.000938s)
+[2017.03.14-22.54.52:066][332]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/BoatLevel.BoatLevel to /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel (0.029779s)
+[2017.03.14-22.54.52:092][332]LogInit: XAudio2 using 'Speakers / HP (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.03.14-22.54.52:102][332]LogInit: FAudioDevice initialized.
+[2017.03.14-22.54.52:155][332]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2017.03.14-22.54.52:161][332]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel up for play (max tick rate 60) at 2017.03.14-18.54.52
+[2017.03.14-22.54.52:163][332]LogWorld: Bringing up level for play took: 0.006337
+[2017.03.14-22.54.52:195][332]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0011 seconds. Added 11 classes and 0 folders.
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:198][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:201][332]LogBlueprintUserMessages: [FirstPersonExampleMap_C_2] Spawned
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:202][332]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.54.52:203][332]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel 0.884
+[2017.03.14-22.54.52:203][332]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.54.58:935][665]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.54.59:041][665]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.55.31:756][ 24]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.14-22.55.31:782][ 24]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.55.31:782][ 24]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.03.14-22.55.31:782][ 24]LogPlayLevel: [PlayLevel] Compiling FirstPersonCharacter before play...
+[2017.03.14-22.55.32:106][ 24]LogPlayLevel: PlayLevel: Blueprint regeneration took 323 ms (1 blueprints)
+[2017.03.14-22.55.32:106][ 24]PIE: New page: PIE session: BoatLevel (Mar 14, 2017, 2:55:32 PM)
+[2017.03.14-22.55.32:106][ 24]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel
+[2017.03.14-22.55.32:133][ 24]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027586s)
+[2017.03.14-22.55.32:134][ 24]LogAIModule: Creating AISystem for world BoatLevel
+[2017.03.14-22.55.32:134][ 24]LogPlayLevel: PIE: World Init took: (0.000764s)
+[2017.03.14-22.55.32:134][ 24]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/BoatLevel.BoatLevel to /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel (0.028634s)
+[2017.03.14-22.55.32:157][ 24]LogInit: XAudio2 using 'Speakers / HP (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.03.14-22.55.32:167][ 24]LogInit: FAudioDevice initialized.
+[2017.03.14-22.55.32:200][ 24]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2017.03.14-22.55.32:206][ 24]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel up for play (max tick rate 60) at 2017.03.14-18.55.32
+[2017.03.14-22.55.32:208][ 24]LogWorld: Bringing up level for play took: 0.006678
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:211][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:214][ 24]LogBlueprintUserMessages: [FirstPersonExampleMap_C_2] Spawned
+[2017.03.14-22.55.32:214][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:214][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:214][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:214][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:214][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:214][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:214][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:214][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.32:215][ 24]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel 0.9
+[2017.03.14-22.55.32:216][ 24]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.55.36:722][186]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.36:723][186]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.38:636][233]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.38:636][233]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.40:442][288]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.40:442][288]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.41:844][353]LogScript:Warning: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+	Attack_Player_C /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel:PersistentLevel.Enemy_Controller_C_0.BTComponent.Attack_Player_C_0
+	Function /Game/Enemy_AI/Tasks/Attack_Player.Attack_Player_C:Attack_Player:007B
+[2017.03.14-22.55.41:844][353]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetAIController_ReturnValue from function: 'Attack_Player' from node: Set Can_Attack in graph: Attack_Player in object: Attack_Player with description: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+[2017.03.14-22.55.42:310][373]LogScript:Warning: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+	Attack_Player_C /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel:PersistentLevel.Enemy_Controller_C_0.BTComponent.Attack_Player_C_0
+	Function /Game/Enemy_AI/Tasks/Attack_Player.Attack_Player_C:Attack_Player:007B
+[2017.03.14-22.55.42:311][373]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetAIController_ReturnValue from function: 'Attack_Player' from node: Set Can_Attack in graph: Attack_Player in object: Attack_Player with description: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+[2017.03.14-22.55.44:362][484]LogScript:Warning: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+	Attack_Player_C /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel:PersistentLevel.Enemy_Controller_C_0.BTComponent.Attack_Player_C_0
+	Function /Game/Enemy_AI/Tasks/Attack_Player.Attack_Player_C:Attack_Player:007B
+[2017.03.14-22.55.44:362][484]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetAIController_ReturnValue from function: 'Attack_Player' from node: Set Can_Attack in graph: Attack_Player in object: Attack_Player with description: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+[2017.03.14-22.55.46:835][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:836][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:836][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:836][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:837][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:837][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:837][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:837][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:838][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:838][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:838][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.46:838][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.55.50:896][784]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.55.50:973][784]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.57.04:856][498]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.14-22.57.04:890][498]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.57.04:890][498]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.14-22.57.04:890][498]PIE: New page: PIE session: BoatLevel (Mar 14, 2017, 2:57:04 PM)
+[2017.03.14-22.57.04:890][498]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel
+[2017.03.14-22.57.04:916][498]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025696s)
+[2017.03.14-22.57.04:917][498]LogAIModule: Creating AISystem for world BoatLevel
+[2017.03.14-22.57.04:917][498]LogPlayLevel: PIE: World Init took: (0.000852s)
+[2017.03.14-22.57.04:917][498]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/BoatLevel.BoatLevel to /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel (0.026884s)
+[2017.03.14-22.57.04:938][498]LogInit: XAudio2 using 'Speakers / HP (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.03.14-22.57.04:947][498]LogInit: FAudioDevice initialized.
+[2017.03.14-22.57.04:979][498]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2017.03.14-22.57.04:985][498]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel up for play (max tick rate 60) at 2017.03.14-18.57.04
+[2017.03.14-22.57.04:986][498]LogWorld: Bringing up level for play took: 0.006129
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:990][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:993][498]LogBlueprintUserMessages: [FirstPersonExampleMap_C_2] Spawned
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.04:994][498]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel -0.316
+[2017.03.14-22.57.04:995][498]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.57.07:268][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.07:268][594]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.09:659][671]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.09:659][671]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.11:787][728]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.11:787][728]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:501][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:501][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:501][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:501][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:502][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:502][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:502][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:502][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:503][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:503][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:503][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.16:503][963]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.57.21:345][194]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.57.21:412][194]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.59.53:121][829]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (nodoors)
+[2017.03.14-22.59.54:726][902]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.14-22.59.54:756][902]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-22.59.54:756][902]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.14-22.59.54:756][902]PIE: New page: PIE session: BoatLevel (Mar 14, 2017, 2:59:54 PM)
+[2017.03.14-22.59.54:756][902]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel
+[2017.03.14-22.59.54:784][902]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027320s)
+[2017.03.14-22.59.54:784][902]LogAIModule: Creating AISystem for world BoatLevel
+[2017.03.14-22.59.54:785][902]LogPlayLevel: PIE: World Init took: (0.000852s)
+[2017.03.14-22.59.54:785][902]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/BoatLevel.BoatLevel to /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel (0.028485s)
+[2017.03.14-22.59.54:804][902]LogInit: XAudio2 using 'Speakers / HP (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.03.14-22.59.54:813][902]LogInit: FAudioDevice initialized.
+[2017.03.14-22.59.54:842][902]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2017.03.14-22.59.54:847][902]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel up for play (max tick rate 60) at 2017.03.14-18.59.54
+[2017.03.14-22.59.54:849][902]LogWorld: Bringing up level for play took: 0.006083
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:852][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]LogBlueprintUserMessages: [FirstPersonExampleMap_C_2] Spawned
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_0.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_1.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:855][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_2.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_3.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_4.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_5.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_6.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-22.59.54:856][902]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel -0.451
+[2017.03.14-22.59.54:856][902]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-23.00.01:982][166]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.01:983][166]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_143.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.03:425][236]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.03:425][236]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up3_560.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.04:658][293]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.04:658][293]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up2_386.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.07:041][404]LogScript:Warning: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+	Attack_Player_C /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel:PersistentLevel.Enemy_Controller_C_0.BTComponent.Attack_Player_C_0
+	Function /Game/Enemy_AI/Tasks/Attack_Player.Attack_Player_C:Attack_Player:007B
+[2017.03.14-23.00.07:041][404]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetAIController_ReturnValue from function: 'Attack_Player' from node: Set Can_Attack in graph: Attack_Player in object: Attack_Player with description: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+[2017.03.14-23.00.08:020][447]LogScript:Warning: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+	Attack_Player_C /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel:PersistentLevel.Enemy_Controller_C_0.BTComponent.Attack_Player_C_0
+	Function /Game/Enemy_AI/Tasks/Attack_Player.Attack_Player_C:Attack_Player:007B
+[2017.03.14-23.00.08:021][447]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetAIController_ReturnValue from function: 'Attack_Player' from node: Set Can_Attack in graph: Attack_Player in object: Attack_Player with description: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+[2017.03.14-23.00.09:183][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:183][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:183][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:183][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_7.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:184][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:184][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:184][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:184][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_8.cylinder_cover cylinder_cover) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:185][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:185][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.ration ration) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:185][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:185][493]PIE:Warning: Warning Invalid Simulate Options: Body (Pick_Up_C_9.flare flare) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.14-23.00.09:589][512]LogScript:Warning: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+	Attack_Player_C /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel:PersistentLevel.Enemy_Controller_C_0.BTComponent.Attack_Player_C_0
+	Function /Game/Enemy_AI/Tasks/Attack_Player.Attack_Player_C:Attack_Player:007B
+[2017.03.14-23.00.09:589][512]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetAIController_ReturnValue from function: 'Attack_Player' from node: Set Can_Attack in graph: Attack_Player in object: Attack_Player with description: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+[2017.03.14-23.00.09:906][528]LogScript:Warning: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+	Attack_Player_C /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel:PersistentLevel.Enemy_Controller_C_0.BTComponent.Attack_Player_C_0
+	Function /Game/Enemy_AI/Tasks/Attack_Player.Attack_Player_C:Attack_Player:007B
+[2017.03.14-23.00.09:906][528]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetAIController_ReturnValue from function: 'Attack_Player' from node: Set Can_Attack in graph: Attack_Player in object: Attack_Player with description: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+[2017.03.14-23.00.10:022][534]LogScript:Warning: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+	Attack_Player_C /Game/FirstPersonBP/Maps/UEDPIE_0_BoatLevel.BoatLevel:PersistentLevel.Enemy_Controller_C_0.BTComponent.Attack_Player_C_0
+	Function /Game/Enemy_AI/Tasks/Attack_Player.Attack_Player_C:Attack_Player:007B
+[2017.03.14-23.00.10:022][534]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetAIController_ReturnValue from function: 'Attack_Player' from node: Set Can_Attack in graph: Attack_Player in object: Attack_Player with description: Accessed None trying to read property CallFunc_GetAIController_ReturnValue
+[2017.03.14-23.00.12:365][639]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-23.00.12:440][639]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel' with GeneratedClass '/Game/FirstPersonBP/Maps/BoatLevel.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/BoatLevel.BoatLevel:PersistentLevel.BoatLevel'
+[2017.03.14-23.02.22:187][ 82]LogSavePackage: Save=254.34ms
+[2017.03.14-23.02.22:187][ 82]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/BoatLevel_Auto16AE40AC44B5C79680722FB9FE945DC17.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/Autosaves/Game/FirstPersonBP/Maps/BoatLevel_Auto1.umap'
+[2017.03.14-23.02.22:188][ 82]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/Autosaves/Game/FirstPersonBP/Maps/BoatLevel_Auto1.umap
+[2017.03.14-23.02.22:191][ 82]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/BoatLevel' took 0.303
+[2017.03.14-23.02.22:191][ 82]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.303
+[2017.03.14-23.02.22:196][ 82]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/FirstPersonBP/Blueprints/FirstPersonCharacter] ([1] browsable assets)...
+[2017.03.14-23.02.22:250][ 82]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter]
+[2017.03.14-23.02.22:250][ 82]OBJ SavePackage: Finished generating thumbnails for package [/Game/FirstPersonBP/Blueprints/FirstPersonCharacter]
+[2017.03.14-23.02.22:425][ 82]LogSavePackage: Save=165.14ms
+[2017.03.14-23.02.22:425][ 82]LogSavePackage: Moving '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/FirstPersonCharacter_Auto1EF4BBE4E4EFD9CB838A59796EB932656.tmp' to '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/Autosaves/Game/FirstPersonBP/Blueprints/FirstPersonCharacter_Auto1.uasset'
+[2017.03.14-23.02.22:426][ 82]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/Autosaves/Game/FirstPersonBP/Blueprints/FirstPersonCharacter_Auto1.uasset
+[2017.03.14-23.02.22:426][ 82]LogFileHelpers: Auto-saving content packages took 0.231
+[2017.03.14-23.14.27:401][320]Cmd: QUIT_EDITOR
+[2017.03.14-23.14.28:080][320]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.03.14-23.14.28:104][320]LogExit: Preparing to exit.
+[2017.03.14-23.14.28:489][320]LogDirectoryWatcher: A directory notification for 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' was aborted.
+[2017.03.14-23.14.28:528][320]LogExit: Editor shut down
+[2017.03.14-23.14.28:528][320]LogExit: Transaction tracking system shut down
+[2017.03.14-23.14.28:628][320]LogObj: Freed 0b from 0 cluster array pools.
+[2017.03.14-23.14.28:629][320]LogExit: Object subsystem successfully closed.
+[2017.03.14-23.14.28:640][320]LogD3D11RHI: Shutdown
+[2017.03.14-23.14.28:640][320]LogD3D11RHI: CleanupD3DDevice
+[2017.03.14-23.14.28:695][320]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.03.14-23.14.28:709][320]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.03.14-23.14.28:709][320]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BEC5D1B1E-4BE6-D768-2A5D-2AA5084F43CC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.14.3-3249277%2B%2B%2BUE4%2BRelease-4.14&UserID=75a9939646c1f11a0845ea95ccdb70ff%7Cea9647959b1b4b3d80099dcdaf89dc45%7C7424aeae-cf7d-4839-8f7c-bce65b5c5681&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.03.14-23.14.28:724][320]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (243)
+[2017.03.14-23.14.28:724][320]LogModuleManager: Shutting down and abandoning module BlueprintGraph (242)
+[2017.03.14-23.14.28:724][320]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (241)
+[2017.03.14-23.14.28:724][320]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (240)
+[2017.03.14-23.14.28:724][320]LogModuleManager: Shutting down and abandoning module CrashTracker (239)
+[2017.03.14-23.14.28:724][320]LogModuleManager: Shutting down and abandoning module SceneOutliner (238)
+[2017.03.14-23.14.28:724][320]LogModuleManager: Shutting down and abandoning module WidgetCarousel (237)
+[2017.03.14-23.14.28:724][320]LogModuleManager: Shutting down and abandoning module AddContentDialog (236)
+[2017.03.14-23.14.28:724][320]LogDirectoryWatcher: A directory notification for 'C:/Program Files (x86)/Epic Games/4.14/FeaturePacks/' was aborted.
+[2017.03.14-23.14.28:726][320]LogModuleManager: Shutting down and abandoning module GameplayTags (235)
+[2017.03.14-23.14.28:726][320]LogModuleManager: Shutting down and abandoning module EditorWidgets (234)
+[2017.03.14-23.14.28:726][320]LogModuleManager: Shutting down and abandoning module CollectionManager (233)
+[2017.03.14-23.14.28:726][320]LogDirectoryWatcher: A directory notification for 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Collections/' was aborted.
+[2017.03.14-23.14.28:726][320]LogDirectoryWatcher: A directory notification for 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/Developers/jgonzale5/Collections/' was aborted.
+[2017.03.14-23.14.28:726][320]LogDirectoryWatcher: A directory notification for 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Saved/Collections/' was aborted.
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module StatsViewer (232)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module FoliageEdit (231)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module LandscapeEditor (230)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (229)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module ActorPickerMode (228)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module GeometryMode (227)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module TextureAlignMode (226)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module BspMode (225)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module HardwareSurvey (224)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (223)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module AutomationWorker (222)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (221)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module PlacementMode (220)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (219)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (218)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (217)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (216)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (215)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module Media (214)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (213)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (212)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module CharacterAI (211)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module SequenceRecorder (210)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module AudioCapture (209)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module SmartSnapping (208)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module SessionServices (207)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module ViewportSnapping (206)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module ViewportInteraction (205)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module LogVisualizer (204)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (203)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module IntroTutorials (202)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (201)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (200)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (199)
+[2017.03.14-23.14.28:727][320]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (198)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (197)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (196)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (195)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module InputBindingEditor (194)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module NiagaraEditor (193)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module MergeActors (192)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module SizeMap (191)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module TreeMap (190)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module ReferenceViewer (189)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module LocalizationService (188)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (187)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module HardwareTargeting (186)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (185)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module UndoHistory (184)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module UserFeedback (183)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module XmlParser (182)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module Blutility (181)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (180)
+[2017.03.14-23.14.29:651][320]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (179)
+[2017.03.14-23.14.29:652][320]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (178)
+[2017.03.14-23.14.29:652][320]LogModuleManager: Shutting down and abandoning module SettingsEditor (177)
+[2017.03.14-23.14.29:652][320]LogModuleManager: Shutting down and abandoning module ProjectLauncher (176)
+[2017.03.14-23.14.29:652][320]LogModuleManager: Shutting down and abandoning module SessionFrontend (175)
+[2017.03.14-23.14.29:652][320]LogModuleManager: Shutting down and abandoning module ProfilerClient (174)
+[2017.03.14-23.14.29:652][320]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (173)
+[2017.03.14-23.14.29:652][320]LogModuleManager: Shutting down and abandoning module DeviceManager (172)
+[2017.03.14-23.14.29:707][320]LogModuleManager: Shutting down and abandoning module AutomationController (171)
+[2017.03.14-23.14.29:707][320]LogModuleManager: Shutting down and abandoning module AutomationWindow (170)
+[2017.03.14-23.14.29:707][320]LogModuleManager: Shutting down and abandoning module Layers (169)
+[2017.03.14-23.14.29:707][320]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (168)
+[2017.03.14-23.14.29:707][320]LogModuleManager: Shutting down and abandoning module DetailCustomizations (167)
+[2017.03.14-23.14.29:707][320]LogModuleManager: Shutting down and abandoning module PackagesDialog (166)
+[2017.03.14-23.14.29:707][320]LogModuleManager: Shutting down and abandoning module AnimGraph (165)
+[2017.03.14-23.14.29:707][320]LogModuleManager: Shutting down and abandoning module Persona (164)
+[2017.03.14-23.14.29:707][320]LogModuleManager: Shutting down and abandoning module Kismet (163)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module GraphEditor (162)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module ClassViewer (161)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module Toolbox (160)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module ModuleUI (159)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module MovieSceneTools (158)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module OutputLog (157)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module GammaUI (156)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module Documentation (155)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (154)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module GeometryCache (153)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module Niagara (152)
+[2017.03.14-23.14.29:714][320]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (151)
+[2017.03.14-23.14.29:715][320]LogModuleManager: Shutting down and abandoning module AnalyticsET (150)
+[2017.03.14-23.14.29:715][320]LogModuleManager: Shutting down and abandoning module PortalServices (149)
+[2017.03.14-23.14.29:715][320]LogModuleManager: Shutting down and abandoning module PortalRpc (148)
+[2017.03.14-23.14.29:715][320]LogModuleManager: Shutting down and abandoning module MessagingRpc (147)
+[2017.03.14-23.14.29:715][320]LogModuleManager: Shutting down and abandoning module GameplayDebugger (146)
+[2017.03.14-23.14.29:715][320]LogModuleManager: Shutting down and abandoning module AITestSuite (145)
+[2017.03.14-23.14.29:715][320]LogModuleManager: Shutting down and abandoning module AIModule (144)
+[2017.03.14-23.14.29:715][320]LogModuleManager: Shutting down and abandoning module ProfilerService (143)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module TaskGraph (142)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module SlateRemote (141)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module SteamVRController (140)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module SteamVR (139)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (138)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (137)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module OculusLibrary (136)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module OculusInput (135)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (134)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (133)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module CableComponent (132)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (131)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (129)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module HTML5Networking (128)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module SuperSearch (127)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (126)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (125)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module PluginBrowser (124)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (123)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module EpicSurvey (122)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module DesktopPlatform (121)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (120)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module UObjectPlugin (119)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (118)
+[2017.03.14-23.14.29:772][320]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (117)
+[2017.03.14-23.14.29:773][320]LogModuleManager: Shutting down and abandoning module SourceControl (116)
+[2017.03.14-23.14.29:773][320]LogModuleManager: Shutting down and abandoning module GitSourceControl (115)
+[2017.03.14-23.14.29:773][320]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (114)
+[2017.03.14-23.14.29:773][320]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (113)
+[2017.03.14-23.14.29:773][320]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (112)
+[2017.03.14-23.14.29:773][320]LogModuleManager: Shutting down and abandoning module MeshPaint (111)
+[2017.03.14-23.14.29:773][320]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (110)
+[2017.03.14-23.14.29:773][320]LogModuleManager: Shutting down and abandoning module HotReload (109)
+[2017.03.14-23.14.29:773][320]LogDirectoryWatcher: A directory notification for 'C:/Users/jgonzale5/Documents/Unreal Projects/FrostLine/Binaries/Win64' was aborted.
+[2017.03.14-23.14.29:773][320]LogModuleManager: Shutting down and abandoning module MainFrame (108)
+[2017.03.14-23.14.29:773][320]LogModuleManager: Shutting down and abandoning module LevelEditor (107)
+[2017.03.14-23.14.29:774][320]LogModuleManager: Shutting down and abandoning module ContentBrowser (106)
+[2017.03.14-23.14.29:775][320]LogModuleManager: Shutting down and abandoning module Paper2DEditor (105)
+[2017.03.14-23.14.29:775][320]LogModuleManager: Shutting down and abandoning module FrostLine (104)
+[2017.03.14-23.14.29:775][320]LogModuleManager: Shutting down and abandoning module UdpMessaging (103)
+[2017.03.14-23.14.29:876][320]LogModuleManager: Shutting down and abandoning module TcpMessaging (102)
+[2017.03.14-23.14.29:976][320]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (101)
+[2017.03.14-23.14.29:976][320]LogModuleManager: Shutting down and abandoning module Paper2D (100)
+[2017.03.14-23.14.29:976][320]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (99)
+[2017.03.14-23.14.29:976][320]LogModuleManager: Shutting down and abandoning module WmfMedia (98)
+[2017.03.14-23.14.29:976][320]LogModuleManager: Shutting down and abandoning module MediaAssets (97)
+[2017.03.14-23.14.29:976][320]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (96)
+[2017.03.14-23.14.29:976][320]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (95)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module VREditor (94)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (93)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (92)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module FunctionalTesting (91)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (90)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module Sequencer (89)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (88)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module MessageLog (87)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module AssetTools (86)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module UMGEditor (85)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module UMG (84)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module SlateReflector (83)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module Slate (82)
+[2017.03.14-23.14.29:977][320]LogModuleManager: Shutting down and abandoning module EditorStyle (81)
+[2017.03.14-23.14.29:986][320]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (80)
+[2017.03.14-23.14.29:986][320]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (79)
+[2017.03.14-23.14.29:986][320]LogModuleManager: Shutting down and abandoning module XAudio2 (78)
+[2017.03.14-23.14.29:986][320]LogModuleManager: Shutting down and abandoning module Networking (76)
+[2017.03.14-23.14.29:986][320]LogModuleManager: Shutting down and abandoning module Core (75)
+[2017.03.14-23.14.29:986][320]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (74)
+[2017.03.14-23.14.29:986][320]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.03.14-23.14.29:987][320]LogDirectoryWatcher: A directory notification for '../../../../../../Users/jgonzale5/Documents/Unreal Projects/FrostLine/Content/' was aborted.
+[2017.03.14-23.14.29:987][320]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.03.14-23.14.29:988][320]LogModuleManager: Shutting down and abandoning module AssetRegistry (73)
+[2017.03.14-23.14.30:107][320]LogModuleManager: Shutting down and abandoning module KismetCompiler (72)
+[2017.03.14-23.14.30:107][320]LogModuleManager: Shutting down and abandoning module PhysXFormats (71)
+[2017.03.14-23.14.30:107][320]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (70)
+[2017.03.14-23.14.30:107][320]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (69)
+[2017.03.14-23.14.30:107][320]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (68)
+[2017.03.14-23.14.30:107][320]LogModuleManager: Shutting down and abandoning module PropertyEditor (67)
+[2017.03.14-23.14.30:107][320]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
+[2017.03.14-23.14.30:107][320]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
+[2017.03.14-23.14.30:134][320]LogDerivedDataCache: Shutdown
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module Messaging (45)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
+[2017.03.14-23.14.30:134][320]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (30)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (29)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (28)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (27)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module InputCore (24)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module Settings (23)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module OculusRift (22)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (21)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (20)
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
+[2017.03.14-23.14.30:135][320]LogOnline:Display: Unloading online subsystem: NULL
+[2017.03.14-23.14.30:135][320]LogModuleManager: Shutting down and abandoning module SSL (17)
+[2017.03.14-23.14.30:136][320]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2017.03.14-23.14.30:136][320]LogModuleManager: Shutting down and abandoning module XMPP (15)
+[2017.03.14-23.14.30:136][320]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.03.14-23.14.30:136][320]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.03.14-23.14.30:136][320]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.03.14-23.14.30:136][320]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.03.14-23.14.30:137][320]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.03.14-23.14.30:137][320]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.03.14-23.14.30:137][320]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.03.14-23.14.30:137][320]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.03.14-23.14.30:137][320]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.03.14-23.14.30:137][320]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.03.14-23.14.30:137][320]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.03.14-23.14.30:137][320]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.03.14-23.14.30:137][320]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.03.14-23.14.30:137][320]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.03.14-23.14.30:139][320]LogExit: Exiting.
+[2017.03.14-23.14.30:140][320]Log file closed, 03/14/17 19:14:30
